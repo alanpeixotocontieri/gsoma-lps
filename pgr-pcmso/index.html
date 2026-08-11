@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PGR e PCMSO | G-Soma — Medicina e Segurança do Trabalho</title>
+<meta name="description" content="PGR e PCMSO elaborados, atualizados e acompanhados por equipe própria com mais de 30 anos de mercado. Documentação pronta para fiscalização, integração com o eSocial e prazos cumpridos.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="PGR e PCMSO sem complicação | G-Soma">
+<meta property="og:description" content="Deixe o PGR e o PCMSO da sua empresa com quem entrega, orienta e antecipa soluções.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde:#31893C;--verde-esc:#256B2E;--verde-claro:#EAF5EB;--verde-mid:#8FE39B;
+  --laranja:#EF7700;--laranja-esc:#C96300;
+  --azul:#3070B8;--azul-esc:#1E4D84;--azul-navy:#16305A;
+  --cinza-bg:#F6F8F6;--cinza-bd:#E3E9E4;
+  --texto:#1B2733;--texto-2:#5B6A79;
+  --vermelho:#C0392B;
+  --radius:16px;--max:1160px;
+  --shadow:0 3px 18px rgba(30,60,40,.07);
+  --shadow-lg:0 16px 44px rgba(30,60,40,.13);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--texto);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 22px}
+section{padding:58px 0}
+h1,h2,h3,h4{line-height:1.16;letter-spacing:-.022em;font-weight:800}
+h2{font-size:clamp(1.65rem,3.4vw,2.4rem)}
+h3{font-size:1.12rem;font-weight:700}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--verde-esc);margin-bottom:13px}
+.eyebrow::before{content:"";width:26px;height:3px;border-radius:3px;background:var(--laranja)}
+.lead{font-size:1.03rem;color:var(--texto-2);max-width:760px}
+.center{text-align:center}
+.center .eyebrow{justify-content:center}
+.center .lead{margin-left:auto;margin-right:auto}
+.sec-head{margin-bottom:34px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:800;font-size:.98rem;padding:15px 28px;border-radius:10px;border:none;cursor:pointer;transition:.2s;text-align:center;line-height:1.25}
+.btn-laranja{background:var(--laranja);color:#fff;box-shadow:0 6px 18px rgba(239,119,0,.28)}
+.btn-laranja:hover{background:var(--laranja-esc);transform:translateY(-2px)}
+.btn-verde{background:var(--verde);color:#fff}
+.btn-verde:hover{background:var(--verde-esc);transform:translateY(-2px)}
+.btn-out{background:#fff;color:var(--verde-esc);border:2px solid var(--verde)}
+.btn-out:hover{background:var(--verde);color:#fff}
+.btn-block{width:100%}
+.btn-sm{padding:11px 20px;font-size:.88rem}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid var(--cinza-bd)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 0}
+.logo img{height:60px;width:auto}
+.hd-right{display:flex;align-items:center;gap:16px}
+.hd-fone{font-weight:800;color:var(--azul-navy);font-size:.95rem;white-space:nowrap}
+.hd-fone span{display:block;font-size:.67rem;font-weight:600;color:var(--texto-2);letter-spacing:.06em;text-transform:uppercase}
+@media(max-width:620px){.hd-fone{display:none}.hd-right .btn{display:none}.logo img{height:52px}}
+
+/* HERO — claro, com card de documentos */
+.hero{background:var(--cinza-bg);border-bottom:1px solid var(--cinza-bd);padding:56px 0;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--cinza-bd) 1px,transparent 1px);background-size:22px 22px;opacity:.55}
+.hero .wrap{position:relative;z-index:2}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(1.95rem,4.1vw,3rem);font-weight:900;margin-bottom:16px;color:var(--azul-navy)}
+.hero h1 em{font-style:normal;color:var(--verde)}
+.hero p.sub{font-size:1.06rem;color:var(--texto-2);margin-bottom:22px;max-width:580px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.tagp{background:#fff;border:1.5px solid var(--cinza-bd);border-radius:100px;padding:7px 14px;font-size:.83rem;font-weight:700;color:var(--azul-esc)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-mini{margin-top:18px;font-size:.85rem;color:var(--texto-2);display:flex;align-items:center;gap:8px}
+.hero-mini svg{flex:0 0 18px}
+
+/* pilha de documentos */
+.docs{position:relative;height:330px}
+.doc{position:absolute;background:#fff;border:1.5px solid var(--cinza-bd);border-radius:12px;box-shadow:var(--shadow-lg);padding:20px;width:78%}
+.doc h4{font-size:.95rem;color:var(--azul-navy);margin-bottom:3px}
+.doc small{font-size:.74rem;color:var(--texto-2);font-weight:600}
+.doc-linhas{margin-top:13px;display:grid;gap:7px}
+.doc-linhas i{display:block;height:7px;border-radius:4px;background:var(--cinza-bd)}
+.doc-linhas i:nth-child(2){width:82%}
+.doc-linhas i:nth-child(3){width:64%}
+.doc-selo{position:absolute;top:16px;right:16px;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.doc1{top:0;left:0;transform:rotate(-4deg);border-top:4px solid var(--verde)}
+.doc1 .doc-selo{background:var(--verde-claro)}
+.doc2{top:105px;left:11%;transform:rotate(2deg);border-top:4px solid var(--azul)}
+.doc2 .doc-selo{background:#E8F0FA}
+.doc3{top:210px;left:22%;transform:rotate(-2deg);border-top:4px solid var(--laranja)}
+.doc3 .doc-selo{background:#FFF1E2}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:30px}.docs{height:300px;max-width:420px}}
+
+/* FAIXA PROVAS — estilo linha, não bloco colorido */
+.faixa{border-bottom:1px solid var(--cinza-bd);background:#fff}
+.faixa-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:24px 0}
+.fx{text-align:center;padding:0 14px;border-right:1px solid var(--cinza-bd)}
+.fx:last-child{border-right:none}
+.fx b{display:block;font-size:clamp(1.4rem,2.8vw,1.95rem);font-weight:900;color:var(--verde);line-height:1.1;letter-spacing:-.03em}
+.fx span{font-size:.82rem;color:var(--texto-2);font-weight:600}
+@media(max-width:700px){.faixa-grid{grid-template-columns:1fr 1fr;gap:20px 0}.fx:nth-child(2){border-right:none}}
+
+/* PGR x PCMSO — dois cards grandes */
+.dois{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.prog{border:1.5px solid var(--cinza-bd);border-radius:var(--radius);overflow:hidden;background:#fff}
+.prog-top{padding:24px 26px;color:#fff}
+.prog:nth-child(1) .prog-top{background:linear-gradient(120deg,var(--verde),var(--verde-esc))}
+.prog:nth-child(2) .prog-top{background:linear-gradient(120deg,var(--azul),var(--azul-esc))}
+.prog-top .sigla{font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+.prog-top h3{font-size:1.35rem;margin:4px 0 6px;color:#fff}
+.prog-top p{font-size:.9rem;opacity:.92}
+.prog-body{padding:24px 26px}
+.prog-body h4{font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;color:var(--texto-2);margin-bottom:12px;font-weight:800}
+.prog-body ul{list-style:none;display:grid;gap:10px}
+.prog-body li{display:flex;gap:10px;align-items:flex-start;font-size:.92rem;color:var(--texto)}
+.prog-body svg{flex:0 0 19px;margin-top:3px}
+@media(max-width:820px){.dois{grid-template-columns:1fr}}
+
+/* COMPARATIVO */
+.comp{background:var(--azul-navy);color:#fff}
+.comp .eyebrow{color:#8FE39B}
+.comp .lead{color:#C5D4E8}
+.comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.comp-col{border-radius:var(--radius);padding:26px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13)}
+.comp-col.bom{background:rgba(49,137,60,.22);border-color:rgba(143,227,155,.4)}
+.comp-col h3{font-size:1.05rem;margin-bottom:16px;display:flex;align-items:center;gap:9px}
+.comp-col ul{list-style:none;display:grid;gap:11px}
+.comp-col li{display:flex;gap:10px;align-items:flex-start;font-size:.93rem;color:#DCE7F5}
+.comp-col.bom li{color:#EAF7EC}
+.comp-col svg{flex:0 0 19px;margin-top:3px}
+@media(max-width:760px){.comp-grid{grid-template-columns:1fr}}
+
+/* FORMULÁRIO — faixa verde no meio */
+.formsec{background:linear-gradient(135deg,var(--verde),#1F6B4E)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.formsec h2{color:#fff;margin-bottom:14px}
+.formsec .eyebrow{color:#CFF0D5}
+.formsec .eyebrow::before{background:#fff}
+.formsec p.intro{color:#E1F1E4;font-size:1.02rem;margin-bottom:20px}
+.form-checks{list-style:none;display:grid;gap:10px}
+.form-checks li{display:flex;gap:10px;align-items:flex-start;font-weight:600;color:#EFF8F0;font-size:.96rem}
+.form-checks svg{flex:0 0 21px;margin-top:2px}
+.form-card{background:#fff;border-radius:var(--radius);padding:26px;box-shadow:var(--shadow-lg)}
+.form-card h3{font-size:1.22rem;margin-bottom:5px;color:var(--azul-navy)}
+.form-card .fsub{font-size:.88rem;color:var(--texto-2);margin-bottom:16px}
+.field{margin-bottom:11px}
+.field label{display:block;font-size:.76rem;font-weight:700;color:var(--texto-2);margin-bottom:5px}
+.field input,.field select{width:100%;padding:12px 14px;border:1.5px solid var(--cinza-bd);border-radius:9px;font-family:inherit;font-size:.93rem;color:var(--texto);background:#fff;transition:.18s}
+.field input:focus,.field select:focus{outline:none;border-color:var(--verde);box-shadow:0 0 0 3px rgba(49,137,60,.14)}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.form-nota{font-size:.72rem;color:var(--texto-2);text-align:center;margin-top:11px;line-height:1.5}
+.form-ok{display:none;background:var(--verde-claro);border:1.5px solid var(--verde);color:var(--verde-esc);padding:15px;border-radius:10px;font-weight:700;font-size:.93rem;text-align:center;margin-top:13px}
+@media(max-width:880px){.form-grid{grid-template-columns:1fr;gap:30px}}
+
+/* INCLUSO — checklist 2 colunas */
+.incluso{display:grid;grid-template-columns:1fr 1fr;gap:12px 30px;max-width:900px;margin:0 auto}
+.inc{display:flex;gap:12px;align-items:flex-start;background:var(--cinza-bg);border-left:3px solid var(--verde);border-radius:0 10px 10px 0;padding:14px 16px}
+.inc svg{flex:0 0 20px;margin-top:3px}
+.inc b{display:block;font-size:.95rem;color:var(--azul-navy);font-weight:800;margin-bottom:2px}
+.inc span{font-size:.86rem;color:var(--texto-2);line-height:1.45}
+@media(max-width:760px){.incluso{grid-template-columns:1fr}}
+
+/* DIFERENCIAIS — lista horizontal */
+.difs{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1.5px solid var(--cinza-bd);border-radius:var(--radius);overflow:hidden}
+.dif{padding:24px 22px;border-right:1.5px solid var(--cinza-bd);border-bottom:1.5px solid var(--cinza-bd)}
+.dif:nth-child(4n){border-right:none}
+.dif:nth-child(n+5){border-bottom:none}
+.dif-ico{width:40px;height:40px;border-radius:10px;background:var(--verde-claro);display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.dif:nth-child(2n) .dif-ico{background:#E8F0FA}
+.dif:nth-child(3n) .dif-ico{background:#FFF1E2}
+.dif h4{font-size:.96rem;color:var(--azul-navy);margin-bottom:4px;font-weight:800}
+.dif p{font-size:.85rem;color:var(--texto-2);line-height:1.45}
+@media(max-width:900px){.difs{grid-template-columns:1fr 1fr}.dif:nth-child(2n){border-right:none}.dif:nth-child(n+5){border-bottom:1.5px solid var(--cinza-bd)}.dif:nth-child(n+7){border-bottom:none}}
+@media(max-width:520px){.difs{grid-template-columns:1fr}.dif{border-right:none!important;border-bottom:1.5px solid var(--cinza-bd)!important}.dif:last-child{border-bottom:none!important}}
+
+/* DEPOIMENTO destaque */
+.destaque{background:var(--cinza-bg)}
+.dep-big{max-width:860px;margin:0 auto;text-align:center}
+.aspas{font-size:3.4rem;line-height:1;color:var(--verde-mid);font-weight:900}
+.dep-big p{font-size:1.18rem;font-style:italic;color:var(--texto);margin:6px 0 20px;line-height:1.55}
+.dep-meta{display:flex;align-items:center;justify-content:center;gap:12px}
+.dep-av{width:46px;height:46px;border-radius:50%;background:var(--azul);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.92rem}
+.dep-meta b{display:block;font-size:.94rem;color:var(--azul-navy);text-align:left}
+.dep-meta span{font-size:.83rem;color:var(--texto-2)}
+.dep-mini{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:900px;margin:34px auto 0}
+.dmini{background:#fff;border:1.5px solid var(--cinza-bd);border-radius:12px;padding:20px}
+.dmini p{font-size:.92rem;font-style:italic;color:var(--texto);margin-bottom:12px}
+.dmini b{font-size:.87rem;color:var(--azul-navy)}
+.dmini span{font-size:.79rem;color:var(--texto-2);display:block}
+@media(max-width:700px){.dep-mini{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq-list{max-width:830px;margin:0 auto;display:grid;gap:10px}
+.faq-item{border:1.5px solid var(--cinza-bd);border-radius:11px;overflow:hidden;transition:.2s;background:#fff}
+.faq-item[open]{border-color:var(--verde);box-shadow:var(--shadow)}
+.faq-item summary{padding:17px 22px;font-weight:700;color:var(--azul-navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:.98rem}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:1.45rem;font-weight:400;color:var(--verde);flex:0 0 auto;line-height:1}
+.faq-item[open] summary::after{content:"−"}
+.faq-item .faq-body{padding:0 22px 17px;color:var(--texto-2);font-size:.93rem}
+
+/* CTA FINAL — faixa compacta */
+.final{background:var(--azul-navy);color:#fff;padding:44px 0}
+.final-in{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.final h2{font-size:clamp(1.4rem,2.8vw,1.95rem);margin-bottom:7px}
+.final p{color:#C5D4E8;font-size:.98rem;max-width:560px}
+.final-btns{display:flex;gap:12px;flex-wrap:wrap}
+
+/* RODAPÉ */
+footer{background:#0F2340;color:#93A6C0;padding:42px 0 20px;font-size:.88rem}
+.ft-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:34px;margin-bottom:26px}
+.ft-logo{background:#fff;padding:12px 16px;border-radius:10px;display:inline-block;margin-bottom:13px}
+.ft-logo img{height:56px}
+footer h4{color:#fff;font-size:.79rem;letter-spacing:.13em;text-transform:uppercase;margin-bottom:11px;font-weight:800}
+footer ul{list-style:none;display:grid;gap:7px}
+footer a:hover{color:#8FE39B}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:17px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.79rem}
+@media(max-width:760px){.ft-grid{grid-template-columns:1fr;gap:22px}}
+
+/* WHATSAPP */
+.zap{position:fixed;right:22px;bottom:22px;z-index:950;display:flex;align-items:center;justify-content:center;width:60px;height:60px;background:#25D366;border-radius:50%;box-shadow:0 10px 28px rgba(37,211,102,.45);transition:.22s}
+.zap:hover{transform:translateY(-3px) scale(1.06)}
+.zap svg{width:32px;height:32px}
+@media(max-width:560px){.zap{width:54px;height:54px;right:16px;bottom:16px}.zap svg{width:29px;height:29px}}
+.barra-mob{display:none}
+@media(max-width:760px){
+  .barra-mob{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:940;background:#fff;border-top:1px solid var(--cinza-bd);padding:10px 14px;box-shadow:0 -4px 18px rgba(0,0,0,.08)}
+  body{padding-bottom:74px}
+  .zap{bottom:80px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap hd">
+    <a href="#topo" class="logo"><img src="assets/logo-gsoma.png" alt="G-Soma — Medicina e Segurança do Trabalho"></a>
+    <div class="hd-right">
+      <a href="tel:+554196600669" class="hd-fone"><span>Fale agora</span>(41) 9660-0669</a>
+      <a href="#form" class="btn btn-laranja btn-sm">Solicitar proposta</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="topo">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">PGR e PCMSO</span>
+        <h1>Deixe o PGR e o PCMSO da sua empresa com quem <em>entrega, orienta e antecipa</em></h1>
+        <p class="sub">Elaboração, atualização e acompanhamento dos programas obrigatórios de Saúde e Segurança do Trabalho — com equipe própria, prazos cumpridos e documentação pronta para qualquer fiscalização.</p>
+        <div class="hero-tags">
+          <span class="tagp">Equipe técnica própria</span>
+          <span class="tagp">Integração com o eSocial</span>
+          <span class="tagp">Apoio em fiscalizações</span>
+          <span class="tagp">Riscos psicossociais (NR-01)</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#form" class="btn btn-laranja">Solicitar proposta</a>
+          <a href="https://wa.me/554196600669?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20PGR%20e%20PCMSO%20e%20gostaria%20de%20uma%20proposta." class="btn btn-out" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        </div>
+        <div class="hero-mini">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Mais de 1.200 empresas assessoradas desde 1995</span>
+        </div>
+      </div>
+
+      <div class="docs">
+        <div class="doc doc1">
+          <div class="doc-selo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h4>PGR</h4><small>Programa de Gerenciamento de Riscos</small>
+          <div class="doc-linhas"><i></i><i></i><i></i></div>
+        </div>
+        <div class="doc doc2">
+          <div class="doc-selo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h4>PCMSO</h4><small>Controle Médico de Saúde Ocupacional</small>
+          <div class="doc-linhas"><i></i><i></i><i></i></div>
+        </div>
+        <div class="doc doc3">
+          <div class="doc-selo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#EF7700" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h4>Inventário de riscos</h4><small>Base do PGR, com plano de ação</small>
+          <div class="doc-linhas"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAIXA -->
+<div class="faixa">
+  <div class="wrap faixa-grid">
+    <div class="fx"><b>+30 anos</b><span>de mercado desde 1995</span></div>
+    <div class="fx"><b>+1.200</b><span>empresas assessoradas</span></div>
+    <div class="fx"><b>+30 mil</b><span>vidas assistidas</span></div>
+    <div class="fx"><b>+50</b><span>profissionais especializados</span></div>
+  </div>
+</div>
+
+<!-- PGR x PCMSO -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Os dois programas</span>
+      <h2>PGR e PCMSO: o que é cada um</h2>
+      <p class="lead">São obrigatórios, complementares e conversam entre si. Um mapeia os riscos do ambiente; o outro cuida da saúde de quem está exposto a eles.</p>
+    </div>
+    <div class="dois">
+      <div class="prog">
+        <div class="prog-top">
+          <div class="sigla">NR-01</div>
+          <h3>PGR</h3>
+          <p>Programa de Gerenciamento de Riscos</p>
+        </div>
+        <div class="prog-body">
+          <h4>O que a G-Soma faz</h4>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Inventário de riscos físicos, químicos, biológicos, ergonômicos e de acidentes</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Inclusão dos riscos psicossociais, conforme a atualização da NR-01</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Plano de ação com medidas, responsáveis e prazos</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Revisão periódica e após mudanças no processo produtivo</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="prog">
+        <div class="prog-top">
+          <div class="sigla">NR-07</div>
+          <h3>PCMSO</h3>
+          <p>Programa de Controle Médico de Saúde Ocupacional</p>
+        </div>
+        <div class="prog-body">
+          <h4>O que a G-Soma faz</h4>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#3070B8"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Elaboração pelo médico do trabalho, a partir dos riscos do seu PGR</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#3070B8"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Definição dos exames por função e periodicidade</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#3070B8"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Controle de ASO e alerta antes de cada vencimento</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#3070B8"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Relatório analítico anual e envio dos eventos ao eSocial</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARATIVO -->
+<section class="comp">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">A diferença na prática</span>
+      <h2>Como costuma ser × como fica com a G-Soma</h2>
+      <p class="lead">O problema quase nunca é o documento em si. É o que acontece nos onze meses seguintes à entrega.</p>
+    </div>
+    <div class="comp-grid">
+      <div class="comp-col">
+        <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#C0392B"/><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg> Como costuma ser</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#F1948A" stroke-width="2.2" stroke-linecap="round"/></svg><span>Documento entregue em PDF e esquecido até a próxima fiscalização</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#F1948A" stroke-width="2.2" stroke-linecap="round"/></svg><span>Modelo genérico, copiado de outra empresa do mesmo CNAE</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#F1948A" stroke-width="2.2" stroke-linecap="round"/></svg><span>PGR e PCMSO feitos por fornecedores diferentes, sem conversar entre si</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#F1948A" stroke-width="2.2" stroke-linecap="round"/></svg><span>O RH descobre o vencimento quando o auditor pergunta</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#F1948A" stroke-width="2.2" stroke-linecap="round"/></svg><span>Mudou a norma? Ninguém avisa</span></li>
+        </ul>
+      </div>
+      <div class="comp-col bom">
+        <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Como fica com a G-Soma</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#31893C"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Acompanhamento contínuo, com consultoria durante toda a vigência</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#31893C"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Levantamento feito na sua operação, com os riscos que existem de verdade</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#31893C"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>PGR e PCMSO integrados: o segundo nasce dos riscos mapeados no primeiro</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#31893C"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Controle ativo de prazos: você é avisado antes de qualquer vencimento</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#31893C"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Mudou a norma? Revisamos o impacto no seu contrato e avisamos</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULÁRIO -->
+<section class="formsec" id="form">
+  <div class="wrap">
+    <div class="form-grid">
+      <div>
+        <span class="eyebrow">Fale com a G-Soma</span>
+        <h2>Receba uma proposta de PGR e PCMSO sob medida</h2>
+        <p class="intro">Preencha os dados e um especialista retorna em até 1 dia útil com o escopo e o valor por colaborador para a realidade da sua empresa.</p>
+        <ul class="form-checks">
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#31893C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Escopo conforme o seu porte, CNAE e grau de risco</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#31893C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Adequação inicial à NR-01 com o DRPS incluso na contratação</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#31893C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Migração de outro fornecedor sem refazer o que já está válido</span></li>
+        </ul>
+      </div>
+      <div class="form-card">
+        <h3>Solicite sua proposta</h3>
+        <p class="fsub">Sem compromisso. Retorno em até 1 dia útil.</p>
+        <form id="lead-form" novalidate>
+          <div class="field">
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="empresa">Empresa *</label>
+              <input type="text" id="empresa" name="empresa" required placeholder="Razão social">
+            </div>
+            <div class="field">
+              <label for="tel">WhatsApp *</label>
+              <input type="tel" id="tel" name="tel" required placeholder="(00) 00000-0000">
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">E-mail corporativo *</label>
+            <input type="email" id="email" name="email" required placeholder="voce@empresa.com.br">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="colab">Nº de colaboradores *</label>
+              <select id="colab" name="colab" required>
+                <option value="">Selecione</option>
+                <option>Até 19</option>
+                <option>20 a 49</option>
+                <option>50 a 99</option>
+                <option>100 a 299</option>
+                <option>300 ou mais</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="doc">Situação atual *</label>
+              <select id="doc" name="doc" required>
+                <option value="">Selecione</option>
+                <option>Tenho os dois e estão em dia</option>
+                <option>Tenho, mas estão vencidos</option>
+                <option>Tenho só um dos dois</option>
+                <option>Não tenho nenhum</option>
+                <option>Não sei</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-laranja btn-block">Solicitar proposta</button>
+          <p class="form-nota">Seus dados são usados apenas para este contato comercial, conforme a LGPD.</p>
+          <div class="form-ok" id="form-ok">✅ Recebemos seus dados! Nossa equipe entra em contato em até 1 dia útil.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE ESTÁ INCLUSO -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Escopo</span>
+      <h2>O que está incluso no contrato</h2>
+    </div>
+    <div class="incluso">
+      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Elaboração dos programas</b><span>PGR e PCMSO conforme as exigências legais aplicáveis ao seu CNAE.</span></div></div>
+      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Atualização e revisão</b><span>Revisão periódica e sempre que houver mudança relevante na operação.</span></div></div>
+      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Consultoria durante a vigência</b><span>Canal direto com a equipe técnica para dúvidas do dia a dia.</span></div></div>
+      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Integração com o eSocial</b><span>Envio dos eventos de SST dentro do prazo, sem retrabalho para o RH.</span></div></div>
+      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Apoio em fiscalizações e auditorias</b><span>Suporte técnico e documentação organizada para apresentação imediata.</span></div></div>
+      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Adequação à NR-01</b><span>Riscos psicossociais mapeados e DRPS incluso na contratação.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Por que a G-Soma</span>
+      <h2>Estrutura própria faz diferença no dia da fiscalização</h2>
+    </div>
+    <div class="difs">
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div><h4>+1.000 m² de estrutura</h4><p>Clínica própria e sala exclusiva para treinamentos em altura.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 10-7.8 7.8l1.1 1L12 21.2l7.7-7.8 1.1-1a5.5 5.5 0 000-7.8z"/></svg></div><h4>Médico do trabalho próprio</h4><p>Equipe fixa, sem rodízio, com histórico contínuo dos seus colaboradores.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF7700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.9"/></svg></div><h4>+50 especialistas</h4><p>Engenheiros, técnicos de segurança, médicos e ergonomistas.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h4>Prazos cumpridos</h4><p>Cronograma acordado no início e respeitado em cada entrega.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h4>Pronto para auditoria</h4><p>Documentação organizada, rastreável e disponível quando você precisar.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF7700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/><circle cx="12" cy="12" r="10"/></svg></div><h4>Cobertura nacional</h4><p>+1.200 parceiros credenciados para empresas com filiais em vários estados.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><h4>Custo competitivo</h4><p>Valor por colaborador entre os melhores da região, com escopo claro.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 15h6"/></svg></div><h4>Atualização legal</h4><p>Mudou uma NR? Avisamos e ajustamos antes de virar autuação.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="destaque">
+  <div class="wrap">
+    <div class="dep-big">
+      <div class="aspas">"</div>
+      <p>Trocamos de fornecedor porque o nosso PGR era um documento genérico que ninguém abria. A G-Soma foi na fábrica, levantou risco por setor e hoje o RH recebe aviso antes de qualquer vencimento. Na última fiscalização não faltou nada.</p>
+      <div class="dep-meta">
+        <div class="dep-av">MR</div>
+        <div><b>Marina Ribeiro</b><span>Gerente de RH — Indústria metalúrgica</span></div>
+      </div>
+    </div>
+    <div class="dep-mini">
+      <div class="dmini">
+        <p>"O PCMSO passou a fazer sentido depois que veio amarrado ao PGR. Antes eram dois documentos que não se falavam."</p>
+        <b>Carlos Andrade</b><span>Diretor de Operações — Logística</span>
+      </div>
+      <div class="dmini">
+        <p>"A migração foi mais tranquila do que eu esperava. Aproveitaram o que já estava válido e refizeram só o necessário."</p>
+        <b>Juliana Souza</b><span>Sócia-administradora — Construção civil</span>
+      </div>
+    </div>
+    <p class="center" style="margin-top:22px;font-size:.81rem;color:var(--texto-2)">Depoimentos ilustrativos — substituir pelos reais antes da publicação.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2>O que as empresas mais perguntam</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Minha empresa precisa mesmo dos dois programas?</summary>
+        <div class="faq-body">Na maioria dos casos sim, e eles são complementares: o PCMSO é elaborado a partir dos riscos identificados no PGR. O que muda conforme o porte e o grau de risco é a forma de cumprir a obrigação. Verificamos exatamente o que se aplica ao seu CNAE antes de propor qualquer coisa — inclusive o que não se aplica, para você não pagar a mais.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Já tenho PGR e PCMSO com outra empresa. Dá para migrar?</summary>
+        <div class="faq-body">Sim, e é bem comum. Analisamos a documentação existente, identificamos o que está válido, o que precisa de revisão e o que falta, e assumimos a partir dali — sem refazer o que já está correto e sem período de descoberto.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Como funciona a cobrança?</summary>
+        <div class="faq-body">O modelo mais comum é um valor por colaborador com escopo definido em contrato, o que mantém o custo previsível mesmo quando o quadro cresce. Serviços pontuais como laudos específicos, treinamentos e perícias podem ser orçados à parte, e tudo vem detalhado na proposta.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Os riscos psicossociais da NR-01 entram no PGR?</summary>
+        <div class="faq-body">Entram, e é obrigatório. A atualização da NR-01 incluiu os fatores de risco psicossociais no gerenciamento de riscos ocupacionais, e a fiscalização sobre esse ponto já é punitiva desde 26 de maio de 2026. Ao contratar o PGR ou o PCMSO com a G-Soma, a adequação inicial com elaboração do DRPS vem inclusa.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Quanto tempo leva para ficar pronto?</summary>
+        <div class="faq-body">Depende do porte, do número de setores e da quantidade de funções a avaliar. O levantamento inicial costuma ser rápido, e o prazo exato entra na proposta junto com o cronograma de cada entrega.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Vocês atendem empresas com filiais em outros estados?</summary>
+        <div class="faq-body">Sim. Temos rede credenciada com mais de 1.200 parceiros em todos os estados do Brasil, com padrão auditado pela G-Soma. Você mantém um único contato e um relatório consolidado de todas as unidades.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final">
+  <div class="wrap final-in">
+    <div>
+      <h2>Seu PGR e PCMSO em dia, sem você precisar cobrar</h2>
+      <p>Fale com um especialista e receba uma proposta com escopo e valor por colaborador em até 1 dia útil.</p>
+    </div>
+    <div class="final-btns">
+      <a href="#form" class="btn btn-laranja">Solicitar proposta</a>
+      <a href="https://wa.me/554196600669?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20PGR%20e%20PCMSO%20da%20G-Soma." target="_blank" rel="noopener" class="btn" style="background:#25D366;color:#fff">Falar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer>
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <div class="ft-logo"><img src="assets/logo-gsoma.png" alt="G-Soma"></div>
+        <p>Medicina e Segurança do Trabalho desde 1995. Mais de 1.200 empresas assessoradas e rede credenciada em todo o Brasil.</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+554196600669">(41) 9660-0669</a></li>
+          <li><a href="https://wa.me/554196600669" target="_blank" rel="noopener">WhatsApp comercial</a></li>
+          <li><a href="mailto:comercial@gsoma.com.br">comercial@gsoma.com.br</a></li>
+          <li>Curitiba, Pinhais e Região Metropolitana — PR</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>© <span id="ano"></span> G-Soma — Medicina e Segurança do Trabalho. Todos os direitos reservados.</span>
+      <span>Política de Privacidade · Termos de Uso</span>
+    </div>
+  </div>
+</footer>
+
+<a class="zap" href="https://wa.me/554196600669?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20PGR%20e%20PCMSO%20da%20G-Soma." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" fill="#fff"><path d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.8-1.8c1.9 1 4 1.6 6.2 1.6 7.2 0 13-5.8 13-13S23.2 3 16 3zm0 23.6c-2 0-4-.6-5.7-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.4c-1.1-1.8-1.7-3.8-1.7-5.9C5 9.9 9.9 5 16 5s11 4.9 11 11-4.9 10.6-11 10.6zm6-8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.4-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.2-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6 0-.2-.8-1.9-1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.8 5.2.8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+
+<div class="barra-mob"><a href="#form" class="btn btn-laranja btn-block">Solicitar proposta</a></div>
+
+<script>
+document.getElementById('ano').textContent = new Date().getFullYear();
+
+var tel = document.getElementById('tel');
+tel.addEventListener('input', function(){
+  var v = this.value.replace(/\D/g,'').slice(0,11);
+  if(v.length > 10)      v = v.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+  else if(v.length > 6)  v = v.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
+  else if(v.length > 2)  v = v.replace(/(\d{2})(\d{0,5})/, '($1) $2');
+  else if(v.length > 0)  v = v.replace(/(\d{0,2})/, '($1');
+  this.value = v;
+});
+
+document.getElementById('lead-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  var ok = true;
+  this.querySelectorAll('[required]').forEach(function(c){
+    if(!c.value.trim()){ c.style.borderColor = '#E23A3A'; ok = false; }
+    else c.style.borderColor = '';
+  });
+  if(!ok) return;
+
+  // >>> INTEGRAÇÃO: enviar para CRM / RD Station / e-mail aqui <<<
+
+  this.querySelector('button[type=submit]').style.display = 'none';
+  document.getElementById('form-ok').style.display = 'block';
+  if(window.dataLayer) window.dataLayer.push({event:'lead_form_submit', lp:'pgr-pcmso'});
+});
+</script>
+</body>
+</html>
