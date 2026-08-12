@@ -119,6 +119,17 @@ header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid
 .prog-body svg{flex:0 0 19px;margin-top:3px}
 @media(max-width:820px){.dois{grid-template-columns:1fr}}
 
+/* IMAGENS */
+.fig{border-radius:18px;overflow:hidden;box-shadow:var(--shadow-lg);line-height:0;background:var(--cinza-bg)}
+.fig img{width:100%;height:auto;display:block}
+.fig-info{max-width:520px;margin:34px auto 0}
+.fig-cap{text-align:center;font-size:.83rem;color:var(--texto-2);margin-top:12px;font-weight:600}
+.duo{display:grid;gap:36px;align-items:center}
+.duo-comp{grid-template-columns:.85fr 2fr}
+.duo-inc{grid-template-columns:1.05fr .95fr}
+.duo-inc .incluso{grid-template-columns:1fr;gap:12px;max-width:none}
+@media(max-width:900px){.duo-comp,.duo-inc{grid-template-columns:1fr;gap:26px}.duo .fig{order:-1;max-width:460px;margin:0 auto}}
+
 /* COMPARATIVO */
 .comp{background:var(--azul-navy);color:#fff}
 .comp .eyebrow{color:#8FE39B}
@@ -343,6 +354,10 @@ footer a:hover{color:#8FE39B}
         </div>
       </div>
     </div>
+    <div class="fig fig-info">
+      <img src="assets/img/pgr-infografico.jpg" width="600" height="700" alt="Infográfico comparando PGR e PCMSO: o PGR foca no ambiente de trabalho e seus riscos, o PCMSO foca no trabalhador e seus exames" loading="lazy">
+    </div>
+    <p class="fig-cap">Resumo visual: o PGR olha para o ambiente, o PCMSO olha para quem trabalha nele.</p>
   </div>
 </section>
 
@@ -353,6 +368,10 @@ footer a:hover{color:#8FE39B}
       <span class="eyebrow">A diferença na prática</span>
       <h2>Como costuma ser × como fica com a G-Soma</h2>
       <p class="lead">O problema quase nunca é o documento em si. É o que acontece nos onze meses seguintes à entrega.</p>
+    </div>
+    <div class="duo duo-comp">
+    <div class="fig">
+      <img src="assets/img/pgr-documentacao.jpg" width="768" height="958" alt="Profissional preenchendo a documentação de segurança do trabalho em prancheta" loading="lazy">
     </div>
     <div class="comp-grid">
       <div class="comp-col">
@@ -375,6 +394,7 @@ footer a:hover{color:#8FE39B}
           <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#31893C"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Mudou a norma? Revisamos o impacto no seu contrato e avisamos</span></li>
         </ul>
       </div>
+    </div>
     </div>
   </div>
 </section>
@@ -455,6 +475,7 @@ footer a:hover{color:#8FE39B}
       <span class="eyebrow">Escopo</span>
       <h2>O que está incluso no contrato</h2>
     </div>
+    <div class="duo duo-inc">
     <div class="incluso">
       <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Elaboração dos programas</b><span>PGR e PCMSO conforme as exigências legais aplicáveis ao seu CNAE.</span></div></div>
       <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Atualização e revisão</b><span>Revisão periódica e sempre que houver mudança relevante na operação.</span></div></div>
@@ -462,6 +483,10 @@ footer a:hover{color:#8FE39B}
       <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Integração com o eSocial</b><span>Envio dos eventos de SST dentro do prazo, sem retrabalho para o RH.</span></div></div>
       <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Apoio em fiscalizações e auditorias</b><span>Suporte técnico e documentação organizada para apresentação imediata.</span></div></div>
       <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Adequação à NR-01</b><span>Riscos psicossociais mapeados e DRPS incluso na contratação.</span></div></div>
+    </div>
+    <div class="fig">
+      <img src="assets/img/pgr-equipe.jpg" width="1151" height="800" alt="Equipe técnica da G-Soma em visita a uma empresa cliente para levantamento de riscos" loading="lazy">
+    </div>
     </div>
   </div>
 </section>
