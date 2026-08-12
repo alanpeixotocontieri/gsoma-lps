@@ -60,7 +60,7 @@ header{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.96);backdr
 .hd-right{display:flex;align-items:center;gap:16px}
 .hd-fone{font-weight:800;color:var(--azul-navy);font-size:.95rem;white-space:nowrap}
 .hd-fone span{display:block;font-size:.68rem;font-weight:600;color:var(--texto-2);letter-spacing:.06em;text-transform:uppercase}
-@media(max-width:620px){.hd-fone{display:none}.logo img{height:48px}}
+@media(max-width:620px){.hd-fone{display:none}.hd-right .btn{display:none}.logo img{height:52px}}
 
 /* BARRA DE ALERTA */
 .alerta{background:var(--vermelho);color:#fff;text-align:center;padding:10px 22px;font-size:.9rem;font-weight:700}
@@ -100,6 +100,15 @@ header{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.96);backdr
 .prova b{display:block;font-size:clamp(1.6rem,3.2vw,2.3rem);font-weight:900;line-height:1;letter-spacing:-.03em}
 .prova span{font-size:.85rem;color:#DFF2E2;font-weight:600}
 @media(max-width:700px){.provas-grid{grid-template-columns:1fr 1fr;gap:22px}}
+
+/* IMAGENS */
+.fig{border-radius:18px;overflow:hidden;box-shadow:var(--shadow-lg);line-height:0;background:var(--cinza-bg)}
+.fig img{width:100%;height:auto;display:block}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}
+.duo .risco-grid,.duo .aut-grid,.duo .passos{grid-template-columns:1fr 1fr}
+.duo .passo:not(:last-child)::after{display:none}
+@media(max-width:900px){.duo{grid-template-columns:1fr;gap:28px}.duo .fig{order:-1}}
+@media(max-width:540px){.duo .risco-grid,.duo .aut-grid,.duo .passos{grid-template-columns:1fr}}
 
 /* O QUE MUDOU — LINHA DO TEMPO */
 .tl{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative}
@@ -352,7 +361,15 @@ footer a:hover{color:#8FE39B}
     <div class="sec-head center">
       <span class="eyebrow azul">Entenda em 30 segundos</span>
       <h2>O que mudou na NR-01</h2>
-      <p class="lead">A Portaria MTE nº 1.419/2024 incluiu os fatores de risco psicossociais relacionados ao trabalho no Gerenciamento de Riscos Ocupacionais. Na prática: eles precisam estar identificados, avaliados e controlados dentro do seu PGR.</p>
+    </div>
+    <div class="duo" style="margin-bottom:34px">
+      <div class="fig">
+        <img src="assets/img/nr01-ilustracao.jpg" width="991" height="592" alt="Ilustração da NR-01 com equipamentos de proteção individual" loading="lazy">
+      </div>
+      <div>
+        <p class="lead" style="margin-bottom:14px">A <strong>Portaria MTE nº 1.419/2024</strong> incluiu os fatores de risco psicossociais relacionados ao trabalho no Gerenciamento de Riscos Ocupacionais.</p>
+        <p class="lead">Na prática: eles precisam estar identificados, avaliados e controlados dentro do seu PGR — do mesmo jeito que já acontece com os riscos físicos, químicos e ergonômicos.</p>
+      </div>
     </div>
     <div class="tl">
       <div class="tl-item">
@@ -383,11 +400,16 @@ footer a:hover{color:#8FE39B}
       <h2>O que está em jogo para quem deixou para depois</h2>
       <p class="lead">A exigência não é mais uma recomendação. A ausência de gestão dos riscos psicossociais expõe a empresa em várias frentes ao mesmo tempo.</p>
     </div>
+    <div class="duo">
+    <div class="fig">
+      <img src="assets/img/nr01-avaliacao.jpg" width="900" height="600" alt="Profissionais de segurança do trabalho avaliando riscos em ambiente industrial" loading="lazy">
+    </div>
     <div class="risco-grid">
       <div class="risco-card"><h4>Auto de infração</h4><p>Empresas sem os riscos psicossociais descritos no PGR podem ser autuadas pela fiscalização do trabalho.</p></div>
       <div class="risco-card"><h4>Agravamento em risco grave</h4><p>Em situação de risco grave e iminente, a penalidade pode ser majorada e o auditor pode interditar setor ou embargar obra.</p></div>
       <div class="risco-card"><h4>Passivo trabalhista</h4><p>A falta do documento vira prova contra a empresa em ações por assédio, sobrecarga e adoecimento mental.</p></div>
       <div class="risco-card"><h4>Afastamentos e turnover</h4><p>Transtornos mentais são hoje uma das maiores causas de afastamento — e o custo aparece antes da multa.</p></div>
+    </div>
     </div>
   </div>
 </section>
@@ -467,11 +489,16 @@ footer a:hover{color:#8FE39B}
       <span class="eyebrow">Simples assim</span>
       <h2>Como funciona na prática</h2>
     </div>
+    <div class="duo">
     <div class="passos">
       <div class="passo"><div class="passo-n">1</div><h3>Você entra em contato</h3><p>Preenche o formulário ou chama no WhatsApp e nossa equipe entende o cenário atual da sua operação.</p></div>
       <div class="passo"><div class="passo-n">2</div><h3>Definimos a contratação</h3><p>Verificamos se o caminho é PGR, PCMSO ou os dois, e como a adequação à NR-01 será aplicada.</p></div>
       <div class="passo"><div class="passo-n">3</div><h3>Elaboramos o DRPS</h3><p>Nossa equipe conduz o levantamento e organiza a entrega do documento com apoio técnico especializado.</p></div>
       <div class="passo"><div class="passo-n">4</div><h3>Você recebe tudo pronto</h3><p>Documentação entregue, plano de ação em mãos e sua empresa pronta para responder à fiscalização.</p></div>
+    </div>
+    <div class="fig">
+      <img src="assets/img/nr01-equipe.jpg" width="852" height="480" alt="Equipe técnica analisando a documentação de segurança do trabalho" loading="lazy">
+    </div>
     </div>
   </div>
 </section>
@@ -483,11 +510,16 @@ footer a:hover{color:#8FE39B}
       <span class="eyebrow azul">Por que a G-Soma</span>
       <h2>Por que empresas escolhem a G-Soma para a NR-01</h2>
     </div>
+    <div class="duo">
+    <div class="fig">
+      <img src="assets/img/nr01-treinamento.jpg" width="1400" height="934" alt="Treinamento de segurança do trabalho conduzido pela equipe técnica em estrutura própria" loading="lazy">
+    </div>
     <div class="aut-grid">
       <div class="aut-card"><h4>Implementadores MEC</h4><p>Adequação conduzida por implementadores da NR-01 com reconhecimento oficial.</p></div>
       <div class="aut-card"><h4>Pioneirismo na região</h4><p>Entre os primeiros a estruturar a adequação à NR-01 no Paraná.</p></div>
       <div class="aut-card"><h4>Integrado a RH e SST</h4><p>Solução conectada à rotina do seu departamento, não um projeto paralelo.</p></div>
       <div class="aut-card"><h4>+50 profissionais</h4><p>Estrutura física própria e equipe multidisciplinar especializada.</p></div>
+    </div>
     </div>
   </div>
 </section>
