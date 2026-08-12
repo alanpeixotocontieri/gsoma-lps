@@ -116,6 +116,19 @@ header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid
 @media(max-width:900px){.etapas{grid-template-columns:1fr 1fr}.etapa::after{display:none!important}}
 @media(max-width:520px){.etapas{grid-template-columns:1fr}}
 
+/* IMAGENS */
+.fig{border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg);line-height:0;background:var(--cinza-bg)}
+.fig img{width:100%;height:auto;display:block}
+.duo{display:grid;gap:38px;align-items:center}
+.duo-fluxo{grid-template-columns:.95fr 1.35fr}
+.duo-fluxo .etapas{grid-template-columns:1fr 1fr}
+.duo-fluxo .etapa::after{display:none!important}
+.duo-faq{grid-template-columns:.8fr 1.2fr;align-items:start}
+.duo-faq .faq-list{max-width:none;margin:0}
+.fig-round{width:164px;height:164px;border-radius:50%;overflow:hidden;margin:0 auto 20px;box-shadow:var(--shadow-lg);border:5px solid #fff;line-height:0}
+.fig-round img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:900px){.duo-fluxo,.duo-faq{grid-template-columns:1fr;gap:26px}.duo .fig{order:-1;max-width:520px;margin:0 auto}}
+
 /* ONDE ATENDER */
 .onde{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .onde-card{border:1.5px solid var(--cinza-bd);border-radius:var(--radius);padding:30px;position:relative;overflow:hidden;transition:.22s}
@@ -302,11 +315,16 @@ footer a:hover{color:#8FE39B}
       <h2>Do agendamento ao eSocial, sem você acompanhar cada passo</h2>
       <p class="lead">Um fluxo único, com uma equipe só. Nada de intermediar clínica, laboratório e sistema separadamente.</p>
     </div>
+    <div class="duo duo-fluxo">
+    <div class="fig">
+      <img src="assets/img/aso-assinatura.jpg" width="1024" height="683" alt="Médico do trabalho preenchendo e assinando o ASO" loading="lazy">
+    </div>
     <div class="etapas">
       <div class="etapa"><div class="n">1</div><h3>Solicitação</h3><p>O RH pede o exame por WhatsApp, e-mail ou sistema. Agendamos e confirmamos com o colaborador.</p></div>
       <div class="etapa"><div class="n">2</div><h3>Atendimento</h3><p>Consulta e exames complementares no mesmo lugar, em ambiente estruturado e com privacidade.</p></div>
       <div class="etapa"><div class="n">3</div><h3>Emissão do ASO</h3><p>Laudo revisado pelo médico do trabalho e ASO entregue ao RH dentro do prazo combinado.</p></div>
       <div class="etapa"><div class="n">4</div><h3>eSocial e controle</h3><p>Evento enviado e o próximo periódico já entra no nosso controle de vencimentos.</p></div>
+    </div>
     </div>
   </div>
 </section>
@@ -315,6 +333,7 @@ footer a:hover{color:#8FE39B}
 <section>
   <div class="wrap">
     <div class="sec-head center">
+      <div class="fig-round"><img src="assets/img/aso-consulta.jpg" width="350" height="350" alt="Atendimento médico ocupacional em consultório" loading="lazy"></div>
       <span class="eyebrow verde">Flexibilidade</span>
       <h2>Na nossa unidade ou dentro da sua empresa</h2>
       <p class="lead">Você escolhe o formato que faz mais sentido para o seu volume e para a rotina do seu time.</p>
@@ -473,6 +492,10 @@ footer a:hover{color:#8FE39B}
       <span class="eyebrow">Dúvidas frequentes</span>
       <h2>O que o RH mais pergunta</h2>
     </div>
+    <div class="duo duo-faq">
+    <div class="fig">
+      <img src="assets/img/aso-ilustracao.jpg" width="1024" height="1024" alt="Ilustração do ASO — Atestado de Saúde Ocupacional com resultado apto" loading="lazy">
+    </div>
     <div class="faq-list">
       <details class="faq-item" open>
         <summary>Em quanto tempo recebo o ASO?</summary>
@@ -498,6 +521,7 @@ footer a:hover{color:#8FE39B}
         <summary>Como é a cobrança?</summary>
         <div class="faq-body">Normalmente por colaborador atendido ou por pacote mensal, dependendo do seu volume e da frequência. Exames complementares específicos podem ter valor à parte, e tudo vem detalhado na proposta, sem surpresa depois.</div>
       </details>
+    </div>
     </div>
   </div>
 </section>
