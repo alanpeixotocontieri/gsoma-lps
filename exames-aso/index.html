@@ -15,14 +15,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --verde:#31893C;--verde-esc:#256B2E;--verde-claro:#EAF5EB;
-  --laranja:#EF7700;--laranja-esc:#C96300;--laranja-claro:#FFF1E2;
-  --azul:#3070B8;--azul-esc:#1E4D84;--azul-navy:#16305A;--azul-claro:#EAF2FB;
-  --cinza-bg:#F4F7FB;--cinza-bd:#E1E8F0;
-  --texto:#1B2733;--texto-2:#59677A;
+  --verde:#BA001B;--verde-esc:#8C0014;--verde-claro:#FDECEE;
+  --laranja:#DB051E;--laranja-esc:#BA001B;--laranja-claro:#FDECEE;
+  --azul:#222222;--azul-esc:#111111;--azul-navy:#000000;--azul-claro:#F0F0F0;
+  --cinza-bg:#F5F5F5;--cinza-bd:#E5E5E5;
+  --texto:#111111;--texto-2:#555555;
   --radius:22px;--max:1150px;
-  --shadow:0 3px 20px rgba(22,48,90,.07);
-  --shadow-lg:0 18px 46px rgba(22,48,90,.15);
+  --shadow:0 3px 20px rgba(0,0,0,.07);
+  --shadow-lg:0 18px 46px rgba(0,0,0,.15);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -43,7 +43,7 @@ h3{font-size:1.1rem;font-weight:700}
 .sec-head{margin-bottom:34px}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:800;font-size:.98rem;padding:16px 30px;border-radius:100px;border:none;cursor:pointer;transition:.2s;text-align:center;line-height:1.25}
-.btn-laranja{background:var(--laranja);color:#fff;box-shadow:0 8px 22px rgba(239,119,0,.3)}
+.btn-laranja{background:var(--laranja);color:#fff;box-shadow:0 8px 22px rgba(219,5,30,.3)}
 .btn-laranja:hover{background:var(--laranja-esc);transform:translateY(-2px)}
 .btn-branco{background:#fff;color:var(--azul-esc)}
 .btn-branco:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.16)}
@@ -62,17 +62,17 @@ header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid
 @media(max-width:620px){.hd-fone{display:none}.hd-right .btn{display:none}.logo img{height:52px}}
 
 /* HERO CENTRALIZADO */
-.hero{background:linear-gradient(160deg,#3070B8 0%,#1E4D84 60%,#16305A 100%);color:#fff;padding:60px 0 108px;text-align:center;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(49,137,60,.4),transparent 66%);top:-320px;left:50%;transform:translateX(-50%)}
-.hero::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(239,119,0,.3),transparent 68%);bottom:-220px;right:-120px}
+.hero{background:linear-gradient(160deg,#222222 0%,#111111 60%,#000000 100%);color:#fff;padding:60px 0 108px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(186,0,27,.4),transparent 66%);top:-320px;left:50%;transform:translateX(-50%)}
+.hero::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(219,5,30,.3),transparent 68%);bottom:-220px;right:-120px}
 .hero .wrap{position:relative;z-index:2}
 .hero .selo{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.26);border-radius:100px;padding:8px 18px;font-size:.82rem;font-weight:700;margin-bottom:20px}
 .hero .selo svg{flex:0 0 17px}
 .hero h1{font-size:clamp(2rem,4.6vw,3.2rem);font-weight:900;margin:0 auto 18px;max-width:900px}
-.hero h1 em{font-style:normal;color:#8FE39B}
-.hero p.sub{font-size:1.08rem;color:#D3E3F6;margin:0 auto 28px;max-width:660px}
+.hero h1 em{font-style:normal;color:#FF3347}
+.hero p.sub{font-size:1.08rem;color:#D9D9D9;margin:0 auto 28px;max-width:660px}
 .hero-cta{display:flex;flex-wrap:wrap;gap:13px;justify-content:center}
-.hero-mini{margin-top:26px;display:flex;gap:26px;justify-content:center;flex-wrap:wrap;font-size:.88rem;color:#C9DCF2;font-weight:600}
+.hero-mini{margin-top:26px;display:flex;gap:26px;justify-content:center;flex-wrap:wrap;font-size:.88rem;color:#CCCCCC;font-weight:600}
 .hero-mini span{display:flex;align-items:center;gap:7px}
 .hero-mini svg{flex:0 0 17px}
 @media(max-width:700px){.hero{padding:44px 0 96px}.hero-mini{gap:14px;flex-direction:column;align-items:center}}
@@ -102,8 +102,8 @@ header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid
 
 /* FLUXO */
 .fluxo{background:var(--azul-navy);color:#fff}
-.fluxo .eyebrow{background:rgba(255,255,255,.14);color:#8FE39B}
-.fluxo .lead{color:#C5D4E8}
+.fluxo .eyebrow{background:rgba(255,255,255,.14);color:#FF3347}
+.fluxo .lead{color:#CCCCCC}
 .etapas{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .etapa{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:24px 22px;position:relative}
 .etapa .n{width:34px;height:34px;border-radius:50%;background:var(--laranja);color:#fff;font-weight:900;font-size:.9rem;display:flex;align-items:center;justify-content:center;margin-bottom:13px}
@@ -111,7 +111,7 @@ header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid
 .etapa:nth-child(3) .n{background:var(--azul)}
 .etapa:nth-child(4) .n{background:#fff;color:var(--azul-navy)}
 .etapa h3{font-size:1.02rem;margin-bottom:6px}
-.etapa p{font-size:.89rem;color:#C5D4E8;line-height:1.45}
+.etapa p{font-size:.89rem;color:#CCCCCC;line-height:1.45}
 .etapa:not(:last-child)::after{content:"→";position:absolute;right:-13px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.35);font-size:1.2rem;font-weight:700}
 @media(max-width:900px){.etapas{grid-template-columns:1fr 1fr}.etapa::after{display:none!important}}
 @media(max-width:520px){.etapas{grid-template-columns:1fr}}
@@ -150,7 +150,7 @@ header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid
 .field{margin-bottom:12px}
 .field label{display:block;font-size:.76rem;font-weight:700;color:var(--texto-2);margin-bottom:5px}
 .field input,.field select{width:100%;padding:13px 15px;border:1.5px solid var(--cinza-bd);border-radius:11px;font-family:inherit;font-size:.94rem;color:var(--texto);background:#fff;transition:.18s}
-.field input:focus,.field select:focus{outline:none;border-color:var(--azul);box-shadow:0 0 0 3px rgba(48,112,184,.15)}
+.field input:focus,.field select:focus{outline:none;border-color:var(--azul);box-shadow:0 0 0 3px rgba(0,0,0,.15)}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .form-nota{font-size:.73rem;color:var(--texto-2);text-align:center;margin-top:12px;line-height:1.5}
 .form-ok{display:none;background:var(--verde-claro);border:1.5px solid var(--verde);color:var(--verde-esc);padding:16px;border-radius:12px;font-weight:700;font-size:.94rem;text-align:center;margin-top:14px}
@@ -191,18 +191,18 @@ header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid
 /* CTA FINAL */
 .final{background:linear-gradient(120deg,var(--azul),var(--verde));color:#fff;text-align:center}
 .final h2{margin-bottom:12px}
-.final p{color:#E6F1F8;font-size:1.02rem;max-width:600px;margin:0 auto 26px}
+.final p{color:#F2F2F2;font-size:1.02rem;max-width:600px;margin:0 auto 26px}
 .final-btns{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
-.final small{display:block;margin-top:18px;font-size:.84rem;color:#DDECF5}
+.final small{display:block;margin-top:18px;font-size:.84rem;color:#E6E6E6}
 
 /* RODAPÉ */
-footer{background:#0F2340;color:#93A6C0;padding:42px 0 20px;font-size:.88rem}
+footer{background:#000000;color:#A6A6A6;padding:42px 0 20px;font-size:.88rem}
 .ft-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:34px;margin-bottom:26px}
 .ft-logo{background:#fff;padding:12px 16px;border-radius:10px;display:inline-block;margin-bottom:13px}
 .ft-logo img{height:56px}
 footer h4{color:#fff;font-size:.79rem;letter-spacing:.13em;text-transform:uppercase;margin-bottom:11px;font-weight:800}
 footer ul{list-style:none;display:grid;gap:7px}
-footer a:hover{color:#8FE39B}
+footer a:hover{color:#FF3347}
 .ft-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:17px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.79rem}
 @media(max-width:760px){.ft-grid{grid-template-columns:1fr;gap:22px}}
 
@@ -236,7 +236,7 @@ footer a:hover{color:#8FE39B}
 <section class="hero" id="topo">
   <div class="wrap">
     <span class="selo">
-      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#8FE39B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#16305A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#FF3347"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#000000" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       Referência em Medicina do Trabalho há mais de 30 anos
     </span>
     <h1>Exames ocupacionais e ASO <em>com agilidade e sem dor de cabeça</em></h1>
@@ -257,23 +257,23 @@ footer a:hover{color:#8FE39B}
 <div class="wrap tipos">
   <div class="tipos-grid">
     <div class="tipo">
-      <div class="tipo-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg></div>
+      <div class="tipo-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg></div>
       <b>Admissional</b><span>Antes do colaborador iniciar</span>
     </div>
     <div class="tipo">
-      <div class="tipo-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+      <div class="tipo-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#BA001B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
       <b>Periódico</b><span>Na periodicidade do PCMSO</span>
     </div>
     <div class="tipo">
-      <div class="tipo-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#EF7700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg></div>
+      <div class="tipo-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#DB051E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg></div>
       <b>Demissional</b><span>No desligamento</span>
     </div>
     <div class="tipo">
-      <div class="tipo-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0115-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 01-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></div>
+      <div class="tipo-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#BA001B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0115-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 01-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></div>
       <b>Retorno ao trabalho</b><span>Após afastamento</span>
     </div>
     <div class="tipo">
-      <div class="tipo-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 00-2 2v3M16 3h3a2 2 0 012 2v3M8 21H5a2 2 0 01-2-2v-3M16 21h3a2 2 0 002-2v-3"/><circle cx="12" cy="12" r="3"/></svg></div>
+      <div class="tipo-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 00-2 2v3M16 3h3a2 2 0 012 2v3M8 21H5a2 2 0 01-2-2v-3M16 21h3a2 2 0 002-2v-3"/><circle cx="12" cy="12" r="3"/></svg></div>
       <b>Mudança de função</b><span>Quando o risco muda</span>
     </div>
   </div>
@@ -340,23 +340,23 @@ footer a:hover{color:#8FE39B}
     </div>
     <div class="onde">
       <div class="onde-card">
-        <div class="marca"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M10 21v-5h4v5"/><path d="M12 8v4M10 10h4"/></svg></div>
+        <div class="marca"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M10 21v-5h4v5"/><path d="M12 8v4M10 10h4"/></svg></div>
         <h3>Na unidade G-Soma</h3>
         <p>Estrutura clínica própria com mais de 1.000 m² em Curitiba e Pinhais.</p>
         <ul>
-          <li><svg class="ck" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#3070B8"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Consulta e exames complementares no mesmo endereço</span></li>
-          <li><svg class="ck" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#3070B8"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Menos deslocamento e menos tempo parado do colaborador</span></li>
-          <li><svg class="ck" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#3070B8"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Ambiente confortável, que respeita a privacidade</span></li>
+          <li><svg class="ck" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#222222"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Consulta e exames complementares no mesmo endereço</span></li>
+          <li><svg class="ck" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#222222"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Menos deslocamento e menos tempo parado do colaborador</span></li>
+          <li><svg class="ck" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#222222"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Ambiente confortável, que respeita a privacidade</span></li>
         </ul>
       </div>
       <div class="onde-card">
-        <div class="marca"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="15" height="11" rx="2"/><path d="M16 11h3l3 3v4h-6"/><circle cx="6" cy="20" r="2"/><circle cx="18" cy="20" r="2"/></svg></div>
+        <div class="marca"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BA001B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="15" height="11" rx="2"/><path d="M16 11h3l3 3v4h-6"/><circle cx="6" cy="20" r="2"/><circle cx="18" cy="20" r="2"/></svg></div>
         <h3>In company</h3>
         <p>Nossa equipe vai até a sua empresa, em Curitiba, Região Metropolitana e demais estados pela rede credenciada.</p>
         <ul>
-          <li><svg class="ck" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Vale a pena a partir de um volume maior de colaboradores</span></li>
-          <li><svg class="ck" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Zero deslocamento e produção quase sem interrupção</span></li>
-          <li><svg class="ck" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Mesmo padrão de atendimento em todas as suas unidades</span></li>
+          <li><svg class="ck" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Vale a pena a partir de um volume maior de colaboradores</span></li>
+          <li><svg class="ck" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Zero deslocamento e produção quase sem interrupção</span></li>
+          <li><svg class="ck" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Mesmo padrão de atendimento em todas as suas unidades</span></li>
         </ul>
       </div>
     </div>
@@ -430,27 +430,27 @@ footer a:hover{color:#8FE39B}
     </div>
     <div class="pq-grid">
       <div class="pq">
-        <div class="pq-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 10-7.8 7.8l1.1 1L12 21.2l7.7-7.8 1.1-1a5.5 5.5 0 000-7.8z"/></svg></div>
+        <div class="pq-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#BA001B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 10-7.8 7.8l1.1 1L12 21.2l7.7-7.8 1.1-1a5.5 5.5 0 000-7.8z"/></svg></div>
         <div><h4>Equipe médica fixa</h4><p>Médico do trabalho próprio, com continuidade e histórico dos seus colaboradores.</p></div>
       </div>
       <div class="pq">
-        <div class="pq-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div class="pq-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
         <div><h4>Controle ativo de periódicos</h4><p>Alertas automáticos antes do vencimento, para nada expirar sem alguém saber.</p></div>
       </div>
       <div class="pq">
-        <div class="pq-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF7700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></div>
+        <div class="pq-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DB051E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></div>
         <div><h4>Integração com o eSocial</h4><p>Eventos de SST enviados no prazo, sem retrabalho para o departamento pessoal.</p></div>
       </div>
       <div class="pq">
-        <div class="pq-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div>
+        <div class="pq-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#BA001B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div>
         <div><h4>Tudo em um só lugar</h4><p>Consulta e exames complementares no mesmo atendimento, sem peregrinação.</p></div>
       </div>
       <div class="pq">
-        <div class="pq-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <div class="pq-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
         <div><h4>Custo competitivo</h4><p>Valor por colaborador entre os melhores da região, com escopo definido em contrato.</p></div>
       </div>
       <div class="pq">
-        <div class="pq-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF7700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg></div>
+        <div class="pq-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DB051E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg></div>
         <div><h4>Cobertura nacional</h4><p>Mais de 1.200 parceiros credenciados para atender filiais em qualquer estado.</p></div>
       </div>
     </div>
