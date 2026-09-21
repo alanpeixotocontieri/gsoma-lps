@@ -15,15 +15,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --verde:#31893C;--verde-esc:#256B2E;--verde-claro:#EAF5EB;--verde-mid:#8FE39B;
-  --laranja:#EF7700;--laranja-esc:#C96300;
-  --azul:#3070B8;--azul-esc:#1E4D84;--azul-navy:#16305A;
-  --cinza-bg:#F6F8F6;--cinza-bd:#E3E9E4;
-  --texto:#1B2733;--texto-2:#5B6A79;
-  --vermelho:#C0392B;
+  --verde:#BA001B;--verde-esc:#8C0014;--verde-claro:#FDECEE;--verde-mid:#FF3347;
+  --laranja:#DB051E;--laranja-esc:#BA001B;
+  --azul:#222222;--azul-esc:#111111;--azul-navy:#000000;
+  --cinza-bg:#F5F5F5;--cinza-bd:#E5E5E5;
+  --texto:#111111;--texto-2:#555555;
+  --vermelho:#BA001B;
   --radius:16px;--max:1160px;
-  --shadow:0 3px 18px rgba(30,60,40,.07);
-  --shadow-lg:0 16px 44px rgba(30,60,40,.13);
+  --shadow:0 3px 18px rgba(0,0,0,.07);
+  --shadow-lg:0 16px 44px rgba(0,0,0,.13);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -44,7 +44,7 @@ h3{font-size:1.12rem;font-weight:700}
 .sec-head{margin-bottom:34px}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:800;font-size:.98rem;padding:15px 28px;border-radius:10px;border:none;cursor:pointer;transition:.2s;text-align:center;line-height:1.25}
-.btn-laranja{background:var(--laranja);color:#fff;box-shadow:0 6px 18px rgba(239,119,0,.28)}
+.btn-laranja{background:var(--laranja);color:#fff;box-shadow:0 6px 18px rgba(219,5,30,.28)}
 .btn-laranja:hover{background:var(--laranja-esc);transform:translateY(-2px)}
 .btn-verde{background:var(--verde);color:#fff}
 .btn-verde:hover{background:var(--verde-esc);transform:translateY(-2px)}
@@ -89,9 +89,9 @@ header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid
 .doc1{top:0;left:0;transform:rotate(-4deg);border-top:4px solid var(--verde)}
 .doc1 .doc-selo{background:var(--verde-claro)}
 .doc2{top:105px;left:11%;transform:rotate(2deg);border-top:4px solid var(--azul)}
-.doc2 .doc-selo{background:#E8F0FA}
+.doc2 .doc-selo{background:#F0F0F0}
 .doc3{top:210px;left:22%;transform:rotate(-2deg);border-top:4px solid var(--laranja)}
-.doc3 .doc-selo{background:#FFF1E2}
+.doc3 .doc-selo{background:#FDECEE}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:30px}.docs{height:300px;max-width:420px}}
 
 /* FAIXA PROVAS — estilo linha, não bloco colorido */
@@ -132,27 +132,27 @@ header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid
 
 /* COMPARATIVO */
 .comp{background:var(--azul-navy);color:#fff}
-.comp .eyebrow{color:#8FE39B}
-.comp .lead{color:#C5D4E8}
+.comp .eyebrow{color:#FF3347}
+.comp .lead{color:#CCCCCC}
 .comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .comp-col{border-radius:var(--radius);padding:26px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13)}
-.comp-col.bom{background:rgba(49,137,60,.22);border-color:rgba(143,227,155,.4)}
+.comp-col.bom{background:rgba(186,0,27,.22);border-color:rgba(255,51,71,.4)}
 .comp-col h3{font-size:1.05rem;margin-bottom:16px;display:flex;align-items:center;gap:9px}
 .comp-col ul{list-style:none;display:grid;gap:11px}
-.comp-col li{display:flex;gap:10px;align-items:flex-start;font-size:.93rem;color:#DCE7F5}
-.comp-col.bom li{color:#EAF7EC}
+.comp-col li{display:flex;gap:10px;align-items:flex-start;font-size:.93rem;color:#DDDDDD}
+.comp-col.bom li{color:#F5F5F5}
 .comp-col svg{flex:0 0 19px;margin-top:3px}
 @media(max-width:760px){.comp-grid{grid-template-columns:1fr}}
 
 /* FORMULÁRIO — faixa verde no meio */
-.formsec{background:linear-gradient(135deg,var(--verde),#1F6B4E)}
+.formsec{background:linear-gradient(135deg,var(--verde),#7A0012)}
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
 .formsec h2{color:#fff;margin-bottom:14px}
-.formsec .eyebrow{color:#CFF0D5}
+.formsec .eyebrow{color:#FFD6DA}
 .formsec .eyebrow::before{background:#fff}
-.formsec p.intro{color:#E1F1E4;font-size:1.02rem;margin-bottom:20px}
+.formsec p.intro{color:#FFE0E3;font-size:1.02rem;margin-bottom:20px}
 .form-checks{list-style:none;display:grid;gap:10px}
-.form-checks li{display:flex;gap:10px;align-items:flex-start;font-weight:600;color:#EFF8F0;font-size:.96rem}
+.form-checks li{display:flex;gap:10px;align-items:flex-start;font-weight:600;color:#FFF0F1;font-size:.96rem}
 .form-checks svg{flex:0 0 21px;margin-top:2px}
 .form-card{background:#fff;border-radius:var(--radius);padding:26px;box-shadow:var(--shadow-lg)}
 .form-card h3{font-size:1.22rem;margin-bottom:5px;color:var(--azul-navy)}
@@ -160,7 +160,7 @@ header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid
 .field{margin-bottom:11px}
 .field label{display:block;font-size:.76rem;font-weight:700;color:var(--texto-2);margin-bottom:5px}
 .field input,.field select{width:100%;padding:12px 14px;border:1.5px solid var(--cinza-bd);border-radius:9px;font-family:inherit;font-size:.93rem;color:var(--texto);background:#fff;transition:.18s}
-.field input:focus,.field select:focus{outline:none;border-color:var(--verde);box-shadow:0 0 0 3px rgba(49,137,60,.14)}
+.field input:focus,.field select:focus{outline:none;border-color:var(--verde);box-shadow:0 0 0 3px rgba(186,0,27,.14)}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:11px}
 .form-nota{font-size:.72rem;color:var(--texto-2);text-align:center;margin-top:11px;line-height:1.5}
 .form-ok{display:none;background:var(--verde-claro);border:1.5px solid var(--verde);color:var(--verde-esc);padding:15px;border-radius:10px;font-weight:700;font-size:.93rem;text-align:center;margin-top:13px}
@@ -180,8 +180,8 @@ header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid
 .dif:nth-child(4n){border-right:none}
 .dif:nth-child(n+5){border-bottom:none}
 .dif-ico{width:40px;height:40px;border-radius:10px;background:var(--verde-claro);display:flex;align-items:center;justify-content:center;margin-bottom:12px}
-.dif:nth-child(2n) .dif-ico{background:#E8F0FA}
-.dif:nth-child(3n) .dif-ico{background:#FFF1E2}
+.dif:nth-child(2n) .dif-ico{background:#F0F0F0}
+.dif:nth-child(3n) .dif-ico{background:#FDECEE}
 .dif h4{font-size:.96rem;color:var(--azul-navy);margin-bottom:4px;font-weight:800}
 .dif p{font-size:.85rem;color:var(--texto-2);line-height:1.45}
 @media(max-width:900px){.difs{grid-template-columns:1fr 1fr}.dif:nth-child(2n){border-right:none}.dif:nth-child(n+5){border-bottom:1.5px solid var(--cinza-bd)}.dif:nth-child(n+7){border-bottom:none}}
@@ -217,17 +217,17 @@ header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid
 .final{background:var(--azul-navy);color:#fff;padding:44px 0}
 .final-in{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
 .final h2{font-size:clamp(1.4rem,2.8vw,1.95rem);margin-bottom:7px}
-.final p{color:#C5D4E8;font-size:.98rem;max-width:560px}
+.final p{color:#CCCCCC;font-size:.98rem;max-width:560px}
 .final-btns{display:flex;gap:12px;flex-wrap:wrap}
 
 /* RODAPÉ */
-footer{background:#0F2340;color:#93A6C0;padding:42px 0 20px;font-size:.88rem}
+footer{background:#000000;color:#A6A6A6;padding:42px 0 20px;font-size:.88rem}
 .ft-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:34px;margin-bottom:26px}
 .ft-logo{background:#fff;padding:12px 16px;border-radius:10px;display:inline-block;margin-bottom:13px}
 .ft-logo img{height:56px}
 footer h4{color:#fff;font-size:.79rem;letter-spacing:.13em;text-transform:uppercase;margin-bottom:11px;font-weight:800}
 footer ul{list-style:none;display:grid;gap:7px}
-footer a:hover{color:#8FE39B}
+footer a:hover{color:#FF3347}
 .ft-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:17px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.79rem}
 @media(max-width:760px){.ft-grid{grid-template-columns:1fr;gap:22px}}
 
@@ -276,24 +276,24 @@ footer a:hover{color:#8FE39B}
           <a href="https://wa.me/554196600669?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20PGR%20e%20PCMSO%20e%20gostaria%20de%20uma%20proposta." class="btn btn-out" target="_blank" rel="noopener">Falar no WhatsApp</a>
         </div>
         <div class="hero-mini">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span>Mais de 1.200 empresas assessoradas desde 1995</span>
         </div>
       </div>
 
       <div class="docs">
         <div class="doc doc1">
-          <div class="doc-selo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <div class="doc-selo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BA001B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
           <h4>PGR</h4><small>Programa de Gerenciamento de Riscos</small>
           <div class="doc-linhas"><i></i><i></i><i></i></div>
         </div>
         <div class="doc doc2">
-          <div class="doc-selo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <div class="doc-selo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
           <h4>PCMSO</h4><small>Controle Médico de Saúde Ocupacional</small>
           <div class="doc-linhas"><i></i><i></i><i></i></div>
         </div>
         <div class="doc doc3">
-          <div class="doc-selo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#EF7700" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <div class="doc-selo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#DB051E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
           <h4>Inventário de riscos</h4><small>Base do PGR, com plano de ação</small>
           <div class="doc-linhas"><i></i><i></i><i></i></div>
         </div>
@@ -330,10 +330,10 @@ footer a:hover{color:#8FE39B}
         <div class="prog-body">
           <h4>O que a G-Soma faz</h4>
           <ul>
-            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Inventário de riscos físicos, químicos, biológicos, ergonômicos e de acidentes</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Inclusão dos riscos psicossociais, conforme a atualização da NR-01</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Plano de ação com medidas, responsáveis e prazos</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Revisão periódica e após mudanças no processo produtivo</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Inventário de riscos físicos, químicos, biológicos, ergonômicos e de acidentes</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Inclusão dos riscos psicossociais, conforme a atualização da NR-01</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Plano de ação com medidas, responsáveis e prazos</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Revisão periódica e após mudanças no processo produtivo</span></li>
           </ul>
         </div>
       </div>
@@ -346,10 +346,10 @@ footer a:hover{color:#8FE39B}
         <div class="prog-body">
           <h4>O que a G-Soma faz</h4>
           <ul>
-            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#3070B8"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Elaboração pelo médico do trabalho, a partir dos riscos do seu PGR</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#3070B8"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Definição dos exames por função e periodicidade</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#3070B8"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Controle de ASO e alerta antes de cada vencimento</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#3070B8"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Relatório analítico anual e envio dos eventos ao eSocial</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#222222"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Elaboração pelo médico do trabalho, a partir dos riscos do seu PGR</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#222222"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Definição dos exames por função e periodicidade</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#222222"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Controle de ASO e alerta antes de cada vencimento</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#222222"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Relatório analítico anual e envio dos eventos ao eSocial</span></li>
           </ul>
         </div>
       </div>
@@ -375,23 +375,23 @@ footer a:hover{color:#8FE39B}
     </div>
     <div class="comp-grid">
       <div class="comp-col">
-        <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#C0392B"/><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg> Como costuma ser</h3>
+        <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#666666"/><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg> Como costuma ser</h3>
         <ul>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#F1948A" stroke-width="2.2" stroke-linecap="round"/></svg><span>Documento entregue em PDF e esquecido até a próxima fiscalização</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#F1948A" stroke-width="2.2" stroke-linecap="round"/></svg><span>Modelo genérico, copiado de outra empresa do mesmo CNAE</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#F1948A" stroke-width="2.2" stroke-linecap="round"/></svg><span>PGR e PCMSO feitos por fornecedores diferentes, sem conversar entre si</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#F1948A" stroke-width="2.2" stroke-linecap="round"/></svg><span>O RH descobre o vencimento quando o auditor pergunta</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#F1948A" stroke-width="2.2" stroke-linecap="round"/></svg><span>Mudou a norma? Ninguém avisa</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#8C8C8C" stroke-width="2.2" stroke-linecap="round"/></svg><span>Documento entregue em PDF e esquecido até a próxima fiscalização</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#8C8C8C" stroke-width="2.2" stroke-linecap="round"/></svg><span>Modelo genérico, copiado de outra empresa do mesmo CNAE</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#8C8C8C" stroke-width="2.2" stroke-linecap="round"/></svg><span>PGR e PCMSO feitos por fornecedores diferentes, sem conversar entre si</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#8C8C8C" stroke-width="2.2" stroke-linecap="round"/></svg><span>O RH descobre o vencimento quando o auditor pergunta</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.14)"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#8C8C8C" stroke-width="2.2" stroke-linecap="round"/></svg><span>Mudou a norma? Ninguém avisa</span></li>
         </ul>
       </div>
       <div class="comp-col bom">
-        <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Como fica com a G-Soma</h3>
+        <h3><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Como fica com a G-Soma</h3>
         <ul>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#31893C"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Acompanhamento contínuo, com consultoria durante toda a vigência</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#31893C"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Levantamento feito na sua operação, com os riscos que existem de verdade</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#31893C"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>PGR e PCMSO integrados: o segundo nasce dos riscos mapeados no primeiro</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#31893C"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Controle ativo de prazos: você é avisado antes de qualquer vencimento</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#31893C"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Mudou a norma? Revisamos o impacto no seu contrato e avisamos</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#BA001B"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Acompanhamento contínuo, com consultoria durante toda a vigência</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#BA001B"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Levantamento feito na sua operação, com os riscos que existem de verdade</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#BA001B"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>PGR e PCMSO integrados: o segundo nasce dos riscos mapeados no primeiro</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#BA001B"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Controle ativo de prazos: você é avisado antes de qualquer vencimento</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#BA001B"/><path d="M7.5 12.3l3 2.9L16.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Mudou a norma? Revisamos o impacto no seu contrato e avisamos</span></li>
         </ul>
       </div>
     </div>
@@ -408,9 +408,9 @@ footer a:hover{color:#8FE39B}
         <h2>Receba uma proposta de PGR e PCMSO sob medida</h2>
         <p class="intro">Preencha os dados e um especialista retorna em até 1 dia útil com o escopo e o valor por colaborador para a realidade da sua empresa.</p>
         <ul class="form-checks">
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#31893C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Escopo conforme o seu porte, CNAE e grau de risco</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#31893C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Adequação inicial à NR-01 com o DRPS incluso na contratação</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#31893C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Migração de outro fornecedor sem refazer o que já está válido</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#BA001B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Escopo conforme o seu porte, CNAE e grau de risco</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#BA001B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Adequação inicial à NR-01 com o DRPS incluso na contratação</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#BA001B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Migração de outro fornecedor sem refazer o que já está válido</span></li>
         </ul>
       </div>
       <div class="form-card">
@@ -477,12 +477,12 @@ footer a:hover{color:#8FE39B}
     </div>
     <div class="duo duo-inc">
     <div class="incluso">
-      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Elaboração dos programas</b><span>PGR e PCMSO conforme as exigências legais aplicáveis ao seu CNAE.</span></div></div>
-      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Atualização e revisão</b><span>Revisão periódica e sempre que houver mudança relevante na operação.</span></div></div>
-      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Consultoria durante a vigência</b><span>Canal direto com a equipe técnica para dúvidas do dia a dia.</span></div></div>
-      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Integração com o eSocial</b><span>Envio dos eventos de SST dentro do prazo, sem retrabalho para o RH.</span></div></div>
-      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Apoio em fiscalizações e auditorias</b><span>Suporte técnico e documentação organizada para apresentação imediata.</span></div></div>
-      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Adequação à NR-01</b><span>Riscos psicossociais mapeados e DRPS incluso na contratação.</span></div></div>
+      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Elaboração dos programas</b><span>PGR e PCMSO conforme as exigências legais aplicáveis ao seu CNAE.</span></div></div>
+      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Atualização e revisão</b><span>Revisão periódica e sempre que houver mudança relevante na operação.</span></div></div>
+      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Consultoria durante a vigência</b><span>Canal direto com a equipe técnica para dúvidas do dia a dia.</span></div></div>
+      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Integração com o eSocial</b><span>Envio dos eventos de SST dentro do prazo, sem retrabalho para o RH.</span></div></div>
+      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Apoio em fiscalizações e auditorias</b><span>Suporte técnico e documentação organizada para apresentação imediata.</span></div></div>
+      <div class="inc"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Adequação à NR-01</b><span>Riscos psicossociais mapeados e DRPS incluso na contratação.</span></div></div>
     </div>
     <div class="fig">
       <img src="assets/img/pgr-equipe.jpg" width="1151" height="800" alt="Equipe técnica da G-Soma em visita a uma empresa cliente para levantamento de riscos" loading="lazy">
@@ -499,14 +499,14 @@ footer a:hover{color:#8FE39B}
       <h2>Estrutura própria faz diferença no dia da fiscalização</h2>
     </div>
     <div class="difs">
-      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div><h4>+1.000 m² de estrutura</h4><p>Clínica própria e sala exclusiva para treinamentos em altura.</p></div>
-      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 10-7.8 7.8l1.1 1L12 21.2l7.7-7.8 1.1-1a5.5 5.5 0 000-7.8z"/></svg></div><h4>Médico do trabalho próprio</h4><p>Equipe fixa, sem rodízio, com histórico contínuo dos seus colaboradores.</p></div>
-      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF7700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.9"/></svg></div><h4>+50 especialistas</h4><p>Engenheiros, técnicos de segurança, médicos e ergonomistas.</p></div>
-      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h4>Prazos cumpridos</h4><p>Cronograma acordado no início e respeitado em cada entrega.</p></div>
-      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h4>Pronto para auditoria</h4><p>Documentação organizada, rastreável e disponível quando você precisar.</p></div>
-      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF7700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/><circle cx="12" cy="12" r="10"/></svg></div><h4>Cobertura nacional</h4><p>+1.200 parceiros credenciados para empresas com filiais em vários estados.</p></div>
-      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><h4>Custo competitivo</h4><p>Valor por colaborador entre os melhores da região, com escopo claro.</p></div>
-      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 15h6"/></svg></div><h4>Atualização legal</h4><p>Mudou uma NR? Avisamos e ajustamos antes de virar autuação.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#BA001B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div><h4>+1.000 m² de estrutura</h4><p>Clínica própria e sala exclusiva para treinamentos em altura.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 10-7.8 7.8l1.1 1L12 21.2l7.7-7.8 1.1-1a5.5 5.5 0 000-7.8z"/></svg></div><h4>Médico do trabalho próprio</h4><p>Equipe fixa, sem rodízio, com histórico contínuo dos seus colaboradores.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DB051E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.9"/></svg></div><h4>+50 especialistas</h4><p>Engenheiros, técnicos de segurança, médicos e ergonomistas.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#BA001B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h4>Prazos cumpridos</h4><p>Cronograma acordado no início e respeitado em cada entrega.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h4>Pronto para auditoria</h4><p>Documentação organizada, rastreável e disponível quando você precisar.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#DB051E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/><circle cx="12" cy="12" r="10"/></svg></div><h4>Cobertura nacional</h4><p>+1.200 parceiros credenciados para empresas com filiais em vários estados.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#BA001B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><h4>Custo competitivo</h4><p>Valor por colaborador entre os melhores da região, com escopo claro.</p></div>
+      <div class="dif"><div class="dif-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 15h6"/></svg></div><h4>Atualização legal</h4><p>Mudou uma NR? Avisamos e ajustamos antes de virar autuação.</p></div>
     </div>
   </div>
 </section>
