@@ -15,15 +15,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --verde:#31893C;--verde-esc:#256B2E;--verde-claro:#EAF5EB;
-  --laranja:#EF7700;--laranja-esc:#C96300;
-  --azul:#3070B8;--azul-esc:#1E4D84;--azul-navy:#16305A;
-  --cinza-bg:#F5F7FA;--cinza-bd:#E2E8F0;
-  --texto:#1B2733;--texto-2:#556274;
-  --vermelho:#C0392B;
+  --verde:#BA001B;--verde-esc:#8C0014;--verde-claro:#FDECEE;
+  --laranja:#DB051E;--laranja-esc:#BA001B;
+  --azul:#222222;--azul-esc:#111111;--azul-navy:#000000;
+  --cinza-bg:#F5F5F5;--cinza-bd:#E5E5E5;
+  --texto:#111111;--texto-2:#555555;
+  --vermelho:#BA001B;
   --radius:14px;--max:1180px;
-  --shadow:0 4px 24px rgba(22,48,90,.08);
-  --shadow-lg:0 18px 48px rgba(22,48,90,.14);
+  --shadow:0 4px 24px rgba(0,0,0,.08);
+  --shadow-lg:0 18px 48px rgba(0,0,0,.14);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -36,17 +36,17 @@ h1,h2,h3,h4{line-height:1.18;letter-spacing:-.02em;font-weight:800}
 h2{font-size:clamp(1.7rem,3.6vw,2.5rem)}
 h3{font-size:1.15rem;font-weight:700}
 .eyebrow{display:inline-block;font-size:.76rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--verde);background:var(--verde-claro);padding:7px 15px;border-radius:100px;margin-bottom:14px}
-.eyebrow.laranja{color:var(--laranja-esc);background:#FFF1E2}
-.eyebrow.azul{color:var(--azul-esc);background:#E8F0FA}
+.eyebrow.laranja{color:var(--laranja-esc);background:#FDECEE}
+.eyebrow.azul{color:var(--azul-esc);background:#F0F0F0}
 .lead{font-size:1.05rem;color:var(--texto-2);max-width:780px}
 .center{text-align:center}
 .center .lead{margin-left:auto;margin-right:auto}
 .sec-head{margin-bottom:32px}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:800;font-size:1rem;padding:16px 30px;border-radius:100px;border:none;cursor:pointer;transition:.22s;text-align:center;line-height:1.25}
-.btn-laranja{background:var(--laranja);color:#fff;box-shadow:0 8px 22px rgba(239,119,0,.32)}
+.btn-laranja{background:var(--laranja);color:#fff;box-shadow:0 8px 22px rgba(219,5,30,.32)}
 .btn-laranja:hover{background:var(--laranja-esc);transform:translateY(-2px)}
-.btn-verde{background:var(--verde);color:#fff;box-shadow:0 8px 22px rgba(49,137,60,.3)}
+.btn-verde{background:var(--verde);color:#fff;box-shadow:0 8px 22px rgba(186,0,27,.3)}
 .btn-verde:hover{background:var(--verde-esc);transform:translateY(-2px)}
 .btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55)}
 .btn-ghost:hover{background:#fff;color:var(--azul-esc)}
@@ -67,16 +67,16 @@ header{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.96);backdr
 .alerta strong{font-weight:900}
 
 /* HERO */
-.hero{position:relative;background:linear-gradient(140deg,#16305A 0%,#1E4D84 48%,#3070B8 100%);color:#fff;padding:52px 0 62px;overflow:hidden}
-.hero::before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(239,119,0,.34),transparent 68%);top:-230px;right:-160px}
-.hero::after{content:"";position:absolute;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(49,137,60,.38),transparent 68%);bottom:-240px;left:-150px}
+.hero{position:relative;background:linear-gradient(140deg,#000000 0%,#111111 48%,#222222 100%);color:#fff;padding:52px 0 62px;overflow:hidden}
+.hero::before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(219,5,30,.34),transparent 68%);top:-230px;right:-160px}
+.hero::after{content:"";position:absolute;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(186,0,27,.38),transparent 68%);bottom:-240px;left:-150px}
 .hero .wrap{position:relative;z-index:2}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
 .hero h1{font-size:clamp(1.95rem,4.1vw,3rem);font-weight:900;margin-bottom:18px}
-.hero h1 em{font-style:normal;color:#FFB259}
-.hero p.sub{font-size:1.08rem;color:#D6E4F5;margin-bottom:24px;max-width:600px}
+.hero h1 em{font-style:normal;color:#FF3347}
+.hero p.sub{font-size:1.08rem;color:#D9D9D9;margin-bottom:24px;max-width:600px}
 .hero-checks{list-style:none;display:grid;gap:10px;margin-bottom:28px}
-.hero-checks li{display:flex;align-items:flex-start;gap:11px;font-size:1rem;color:#EAF2FC}
+.hero-checks li{display:flex;align-items:flex-start;gap:11px;font-size:1rem;color:#EEEEEE}
 .hero-checks svg{flex:0 0 22px;margin-top:2px}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
 
@@ -86,7 +86,7 @@ header{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.96);backdr
 .field{margin-bottom:11px}
 .field label{display:block;font-size:.77rem;font-weight:700;color:var(--texto-2);margin-bottom:5px}
 .field input,.field select{width:100%;padding:12px 14px;border:1.5px solid var(--cinza-bd);border-radius:10px;font-family:inherit;font-size:.94rem;color:var(--texto);background:#fff;transition:.18s}
-.field input:focus,.field select:focus{outline:none;border-color:var(--verde);box-shadow:0 0 0 3px rgba(49,137,60,.14)}
+.field input:focus,.field select:focus{outline:none;border-color:var(--verde);box-shadow:0 0 0 3px rgba(186,0,27,.14)}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:11px}
 .form-selo{display:flex;align-items:center;gap:9px;background:var(--verde-claro);border-radius:10px;padding:11px 13px;margin-bottom:15px;font-size:.83rem;font-weight:700;color:var(--verde-esc);line-height:1.35}
 .form-selo svg{flex:0 0 20px}
@@ -98,7 +98,7 @@ header{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.96);backdr
 .provas{background:var(--verde);color:#fff;padding:30px 0}
 .provas-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
 .prova b{display:block;font-size:clamp(1.6rem,3.2vw,2.3rem);font-weight:900;line-height:1;letter-spacing:-.03em}
-.prova span{font-size:.85rem;color:#DFF2E2;font-weight:600}
+.prova span{font-size:.85rem;color:#FFE0E3;font-weight:600}
 @media(max-width:700px){.provas-grid{grid-template-columns:1fr 1fr;gap:22px}}
 
 /* IMAGENS */
@@ -113,7 +113,7 @@ header{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.96);backdr
 /* O QUE MUDOU — LINHA DO TEMPO */
 .tl{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative}
 .tl-item{background:#fff;border:1.5px solid var(--cinza-bd);border-radius:var(--radius);padding:22px;position:relative}
-.tl-item.ativo{border-color:var(--vermelho);box-shadow:0 10px 30px rgba(192,57,43,.15)}
+.tl-item.ativo{border-color:var(--vermelho);box-shadow:0 10px 30px rgba(186,0,27,.15)}
 .tl-data{font-size:.74rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--azul);margin-bottom:8px}
 .tl-item.ativo .tl-data{color:var(--vermelho)}
 .tl-item h3{font-size:1.02rem;color:var(--azul-navy);margin-bottom:6px}
@@ -123,23 +123,23 @@ header{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.96);backdr
 
 /* RISCOS */
 .riscos{background:var(--azul-navy);color:#fff}
-.riscos .eyebrow{background:rgba(255,255,255,.14);color:#FFB259}
-.riscos .lead{color:#C9D8EC}
+.riscos .eyebrow{background:rgba(255,255,255,.14);color:#FF3347}
+.riscos .lead{color:#CCCCCC}
 .risco-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .risco-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:22px;border-top:3px solid var(--laranja)}
 .risco-card h4{font-size:1rem;margin-bottom:6px;font-weight:800}
-.risco-card p{font-size:.88rem;color:#C9D8EC;line-height:1.45}
+.risco-card p{font-size:.88rem;color:#CCCCCC;line-height:1.45}
 @media(max-width:900px){.risco-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:540px){.risco-grid{grid-template-columns:1fr}}
 
 /* OFERTA */
-.oferta{background:linear-gradient(135deg,#EF7700,#C96300);color:#fff;position:relative;overflow:hidden}
+.oferta{background:linear-gradient(135deg,#DB051E,#BA001B);color:#fff;position:relative;overflow:hidden}
 .oferta::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:rgba(255,255,255,.07);top:-200px;left:-140px}
 .oferta .wrap{position:relative;z-index:2}
 .oferta-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
 .oferta .eyebrow{background:rgba(255,255,255,.22);color:#fff}
 .oferta h2{margin-bottom:14px}
-.oferta>.wrap p.intro{color:#FFE9D4;font-size:1.04rem;margin-bottom:20px}
+.oferta>.wrap p.intro{color:#FFE0E3;font-size:1.04rem;margin-bottom:20px}
 .oferta-list{list-style:none;display:grid;gap:11px;margin-bottom:26px}
 .oferta-list li{display:flex;gap:11px;align-items:flex-start;font-weight:600}
 .oferta-list svg{flex:0 0 22px;margin-top:2px}
@@ -155,10 +155,10 @@ header{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.96);backdr
 .ent{background:#fff;border:1.5px solid var(--cinza-bd);border-radius:var(--radius);padding:22px;transition:.24s}
 .ent:hover{border-color:var(--verde);transform:translateY(-4px);box-shadow:var(--shadow-lg)}
 .ent-ico{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:var(--verde-claro)}
-.ent:nth-child(2) .ent-ico{background:#E8F0FA}
-.ent:nth-child(3) .ent-ico{background:#FFF1E2}
-.ent:nth-child(4) .ent-ico{background:#E8F0FA}
-.ent:nth-child(5) .ent-ico{background:#FFF1E2}
+.ent:nth-child(2) .ent-ico{background:#F0F0F0}
+.ent:nth-child(3) .ent-ico{background:#FDECEE}
+.ent:nth-child(4) .ent-ico{background:#F0F0F0}
+.ent:nth-child(5) .ent-ico{background:#FDECEE}
 .ent:nth-child(6) .ent-ico{background:var(--verde-claro)}
 .ent h3{color:var(--azul-navy);margin-bottom:7px;font-size:1.05rem}
 .ent p{font-size:.9rem;color:var(--texto-2)}
@@ -168,7 +168,7 @@ header{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.96);backdr
 /* PASSOS */
 .passos{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;position:relative}
 .passo{text-align:center;position:relative}
-.passo-n{width:58px;height:58px;border-radius:50%;background:var(--azul);color:#fff;font-weight:900;font-size:1.28rem;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:0 8px 20px rgba(48,112,184,.3);position:relative;z-index:2}
+.passo-n{width:58px;height:58px;border-radius:50%;background:var(--azul);color:#fff;font-weight:900;font-size:1.28rem;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:0 8px 20px rgba(0,0,0,.3);position:relative;z-index:2}
 .passo:nth-child(2) .passo-n{background:var(--verde)}
 .passo:nth-child(3) .passo-n{background:var(--laranja)}
 .passo:nth-child(4) .passo-n{background:var(--azul-navy)}
@@ -210,25 +210,25 @@ header{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.96);backdr
 .faq-item .faq-body{padding:0 22px 18px;color:var(--texto-2);font-size:.94rem}
 
 /* CTA FINAL */
-.final{background:linear-gradient(140deg,#31893C,#1E4D84);color:#fff;position:relative;overflow:hidden}
-.final::after{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(239,119,0,.3),transparent 68%);bottom:-260px;right:-160px}
+.final{background:linear-gradient(140deg,#BA001B,#111111);color:#fff;position:relative;overflow:hidden}
+.final::after{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(219,5,30,.3),transparent 68%);bottom:-260px;right:-160px}
 .final .wrap{position:relative;z-index:2}
 .final-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
 .final h2{margin-bottom:14px}
-.final>.wrap p.intro{color:#E3EFE5;font-size:1.04rem;margin-bottom:22px}
+.final>.wrap p.intro{color:#F2F2F2;font-size:1.04rem;margin-bottom:22px}
 .final-checks{list-style:none;display:grid;gap:10px}
-.final-checks li{display:flex;gap:10px;align-items:flex-start;font-weight:600;color:#EFF7F0}
+.final-checks li{display:flex;gap:10px;align-items:flex-start;font-weight:600;color:#F5F5F5}
 .final-checks svg{flex:0 0 22px;margin-top:2px}
 @media(max-width:880px){.final-grid{grid-template-columns:1fr;gap:30px}}
 
 /* RODAPÉ */
-footer{background:#0F2340;color:#93A6C0;padding:44px 0 22px;font-size:.89rem}
+footer{background:#000000;color:#A6A6A6;padding:44px 0 22px;font-size:.89rem}
 .ft-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;margin-bottom:28px}
 .ft-logo{background:#fff;padding:12px 16px;border-radius:10px;display:inline-block;margin-bottom:14px}
 .ft-logo img{height:56px}
 footer h4{color:#fff;font-size:.8rem;letter-spacing:.13em;text-transform:uppercase;margin-bottom:12px;font-weight:800}
 footer ul{list-style:none;display:grid;gap:7px}
-footer a:hover{color:#8FE39B}
+footer a:hover{color:#FF3347}
 .ft-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.8rem}
 @media(max-width:760px){.ft-grid{grid-template-columns:1fr;gap:24px}}
 
@@ -267,13 +267,13 @@ footer a:hover{color:#8FE39B}
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow" style="background:rgba(255,255,255,.15);color:#FFB259">Adequação NR-01 · Riscos psicossociais</span>
+        <span class="eyebrow" style="background:rgba(255,255,255,.15);color:#FF3347">Adequação NR-01 · Riscos psicossociais</span>
         <h1>Sua empresa já pode ser autuada por <em>não gerenciar os riscos psicossociais</em></h1>
         <p class="sub">Desde 26 de maio de 2026 a Auditoria-Fiscal do Trabalho pode lavrar auto de infração contra empresas que não tenham os fatores de risco psicossociais mapeados no PGR. A G-Soma adequa a sua com respaldo técnico e implementadores reconhecidos pelo MEC.</p>
         <ul class="hero-checks">
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Vale para todo empregador com funcionário CLT</strong> — a norma não abre exceção por porte ou número de empregados.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Elaboração do DRPS incluída</strong> na contratação do PGR ou do PCMSO com a G-Soma.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Mais de 30 anos de SST</strong> e equipe própria — não é consultoria improvisada de última hora.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Vale para todo empregador com funcionário CLT</strong> — a norma não abre exceção por porte ou número de empregados.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Elaboração do DRPS incluída</strong> na contratação do PGR ou do PCMSO com a G-Soma.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Mais de 30 anos de SST</strong> e equipe própria — não é consultoria improvisada de última hora.</span></li>
         </ul>
         <div class="hero-cta">
           <a href="#form" class="btn btn-laranja">Quero adequar minha empresa</a>
@@ -285,7 +285,7 @@ footer a:hover{color:#8FE39B}
         <h3>Fale com um especialista em NR-01</h3>
         <p class="fsub">Preencha os dados e nossa equipe retorna em até 1 dia útil com o caminho de adequação para a sua empresa.</p>
         <div class="form-selo">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#31893C"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#BA001B"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span>DRPS incluso na contratação do PGR ou PCMSO</span>
         </div>
         <form id="lead-form" novalidate>
@@ -423,9 +423,9 @@ footer a:hover{color:#8FE39B}
         <h2>Contrate PGR ou PCMSO e receba a adequação inicial da NR-01</h2>
         <p class="intro">Ao se tornar cliente da G-Soma por meio do PGR ou do PCMSO, sua empresa recebe a adequação inicial à NR-01 com elaboração e entrega do DRPS, conduzida por implementadores reconhecidos pelo MEC.</p>
         <ul class="oferta-list">
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#EF7700" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Sem custo adicional sobre o contrato de PGR ou PCMSO</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#EF7700" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Integrado ao PGR desde o início — nada de documento solto</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#EF7700" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Conduzido por equipe própria, com histórico de 30 anos em SST</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#DB051E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Sem custo adicional sobre o contrato de PGR ou PCMSO</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#DB051E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Integrado ao PGR desde o início — nada de documento solto</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#DB051E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Conduzido por equipe própria, com histórico de 30 anos em SST</span></li>
         </ul>
       </div>
       <div class="oferta-box">
@@ -449,32 +449,32 @@ footer a:hover{color:#8FE39B}
     </div>
     <div class="entrega-grid">
       <div class="ent">
-        <div class="ent-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg></div>
+        <div class="ent-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BA001B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg></div>
         <h3>DRPS completo</h3>
         <p>Documento de Riscos Psicossociais com o diagnóstico e o registro inicial dos fatores identificados na sua operação.</p>
       </div>
       <div class="ent">
-        <div class="ent-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-6.2-8.6"/><path d="M9 12l2 2 5-5"/></svg></div>
+        <div class="ent-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-6.2-8.6"/><path d="M9 12l2 2 5-5"/></svg></div>
         <h3>Mapeamento dos fatores</h3>
         <p>Carga e ritmo de trabalho, jornada, metas, autonomia, relações interpessoais, assédio e isolamento no teletrabalho.</p>
       </div>
       <div class="ent">
-        <div class="ent-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EF7700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+        <div class="ent-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#DB051E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
         <h3>Plano de ação</h3>
         <p>Medidas de prevenção e controle com responsáveis e prazos, do jeito que a norma exige e a fiscalização espera ver.</p>
       </div>
       <div class="ent">
-        <div class="ent-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3070B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div class="ent-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
         <h3>Integração ao PGR</h3>
         <p>Os riscos psicossociais entram no inventário de riscos junto com os demais — que é exatamente onde a norma manda estar.</p>
       </div>
       <div class="ent">
-        <div class="ent-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EF7700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.9"/></svg></div>
+        <div class="ent-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#DB051E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.9"/></svg></div>
         <h3>Orientação ao RH</h3>
         <p>Sua equipe entende o que foi levantado, o que precisa ser feito e como responder se a fiscalização perguntar.</p>
       </div>
       <div class="ent">
-        <div class="ent-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#31893C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.8L7 14.3"/></svg></div>
+        <div class="ent-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BA001B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.8L7 14.3"/></svg></div>
         <h3>Acompanhamento contínuo</h3>
         <p>A NR-01 não é entrega única: mantemos a revisão junto ao ciclo do PGR, sem sua empresa precisar lembrar.</p>
       </div>
@@ -596,15 +596,15 @@ footer a:hover{color:#8FE39B}
         <h2>Comece hoje a adequação da sua empresa à NR-01</h2>
         <p class="intro">Cada semana sem o levantamento é mais uma semana de exposição a autuação e a passivo trabalhista. Falar com a nossa equipe não custa nada e não gera compromisso.</p>
         <ul class="final-checks">
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#EF7700"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Retorno em até 1 dia útil, por um especialista</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#EF7700"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>DRPS incluso na contratação do PGR ou PCMSO</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#EF7700"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Implementadores reconhecidos pelo MEC</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#DB051E"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Retorno em até 1 dia útil, por um especialista</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#DB051E"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>DRPS incluso na contratação do PGR ou PCMSO</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#DB051E"/><path d="M7 12.4l3.3 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Implementadores reconhecidos pelo MEC</span></li>
         </ul>
       </div>
       <div style="display:flex;flex-direction:column;gap:13px">
         <a href="#form" class="btn btn-laranja btn-block" style="font-size:1.06rem;padding:20px 30px">Solicitar atendimento</a>
         <a href="https://wa.me/554196600669?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20da%20NR-01%20e%20quero%20falar%20com%20a%20equipe%20da%20G-Soma." target="_blank" rel="noopener" class="btn btn-block" style="background:#25D366;color:#fff;font-size:1.06rem;padding:20px 30px">Prefiro falar no WhatsApp</a>
-        <p style="text-align:center;font-size:.84rem;color:#DCE9DE">Atendimento comercial de segunda a sexta, das 8h às 18h.</p>
+        <p style="text-align:center;font-size:.84rem;color:#E0E0E0">Atendimento comercial de segunda a sexta, das 8h às 18h.</p>
       </div>
     </div>
   </div>
